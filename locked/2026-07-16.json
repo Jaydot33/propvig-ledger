@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-16",
+  "locked_at": "2026-07-17T02:00:10",
+  "content_hash": "214acaefd066a51e60909c339353a960973e7a13a67e0e601598ab1d2482dc28",
+  "prev_hash": "b4c0e1c50bbced15ce69d4ee9fef3ac7ace6fda1eea07180b0bda285ae0639c8",
+  "chain_hash": "6c1e98834824fb224d56fccc01dccee5c9aacc52800d3788b27a373c2984216b",
+  "content": {
+    "date": "2026-07-16",
+    "lanes": {
+      "f5": [],
+      "sharp": [
+        {
+          "k": "Carson Benge",
+          "pick": "OVER",
+          "result": "W"
+        },
+        {
+          "k": "Christian Scott",
+          "pick": "OVER",
+          "result": "L"
+        },
+        {
+          "k": "Jorge Polanco",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Juan Soto",
+          "pick": "OVER",
+          "result": "W"
+        }
+      ],
+      "hr": [
+        {
+          "k": "A.J. Ewing",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Alec Bohm",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Bo Bichette",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brandon Marsh",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brett Baty",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Bryce Harper",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Bryce Harper",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Bryce Harper",
+          "pick": "value",
+          "result": "L"
+        },
+        {
+          "k": "Bryson Stott",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Carson Benge",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Francisco Alvarez",
+          "pick": "likely",
+          "result": "W"
+        },
+        {
+          "k": "Francisco Alvarez",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Francisco Lindor",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "J.T. Realmuto",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jared Young",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Jared Young",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jorge Polanco",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Juan Soto",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Juan Soto",
+          "pick": "value",
+          "result": "L"
+        },
+        {
+          "k": "Justin Crawford",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Kyle Schwarber",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Trea Turner",
+          "pick": "top_prob",
+          "result": "W"
+        }
+      ],
+      "nrfi": [
+        {
+          "k": "NYM@PHI",
+          "pick": "YRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "3-1",
+      "hr": "4-18",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}

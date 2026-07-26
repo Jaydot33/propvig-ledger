@@ -1,0 +1,475 @@
+{
+  "date": "2026-07-05",
+  "locked_at": "2026-07-06T02:00:27",
+  "content_hash": "adcd668d8724531b6eae8c0d1feb3144dad4aeac381e38a9cbdd05f470bcb4b6",
+  "prev_hash": "02ccae3db822615a2a0b6769b17a2590d0fc668d2b55282bdde27e28c70f41f6",
+  "chain_hash": "806225096aa7833011d856f5051e7438b649823e88ad156a9418268379eef5a9",
+  "content": {
+    "date": "2026-07-05",
+    "lanes": {
+      "f5": [
+        {
+          "k": "BAL@CIN",
+          "pick": "BAL",
+          "result": "L"
+        },
+        {
+          "k": "BOS@LAA",
+          "pick": "BOS",
+          "result": "W"
+        },
+        {
+          "k": "DET@TEX",
+          "pick": "DET",
+          "result": "W"
+        },
+        {
+          "k": "MIA@ATH",
+          "pick": "ATH",
+          "result": "L"
+        },
+        {
+          "k": "MIL@AZ",
+          "pick": "AZ",
+          "result": "W"
+        },
+        {
+          "k": "MIN@NYY",
+          "pick": "MIN",
+          "result": "W"
+        },
+        {
+          "k": "PIT@WSH",
+          "pick": "WSH",
+          "result": "P"
+        },
+        {
+          "k": "SD@LAD",
+          "pick": "LAD",
+          "result": "L"
+        }
+      ],
+      "sharp": [
+        {
+          "k": "Caleb Durbin",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Jo Adell",
+          "pick": "UNDER",
+          "result": "L"
+        },
+        {
+          "k": "Manny Machado",
+          "pick": "OVER",
+          "result": "W"
+        },
+        {
+          "k": "Masataka Yoshida",
+          "pick": "UNDER",
+          "result": "L"
+        }
+      ],
+      "hr": [
+        {
+          "k": "Andrew Benintendi",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Andy Pages",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Anthony Seigler",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ben Rice",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Caleb Durbin",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ceddanne Rafaela",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Denzer Guzman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Dillon Dingler",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Elly De La Cruz",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Elly De La Cruz",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Elly De La Cruz",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "Freddie Freeman",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Freddie Freeman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Garrett Mitchell",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Gavin Sheets",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Gavin Sheets",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Gunnar Henderson",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Hunter Goodman",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Jackson Chourio",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Jackson Holliday",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Jackson Merrill",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jarren Duran",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Jo Adell",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jorge Soler",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jose Siri",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Josh Lowe",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ketel Marte",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Luis Campusano",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Luis Campusano",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Manny Machado",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Miguel Rojas",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Miguel Vargas",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Miguel Vargas",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "Mookie Betts",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Oswald Peraza",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Sal Stewart",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Shohei Ohtani",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Shohei Ohtani",
+          "pick": "value",
+          "result": "L"
+        },
+        {
+          "k": "Sung-Mun Song",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Tsung-Che Cheng",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ty France",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Ty France",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "Ty France",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Tyler Stephenson",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Willson Contreras",
+          "pick": "listed",
+          "result": "W"
+        },
+        {
+          "k": "Willson Contreras",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Willson Contreras",
+          "pick": "value",
+          "result": "W"
+        },
+        {
+          "k": "Wilyer Abreu",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Zach Neto",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Zach Neto",
+          "pick": "value",
+          "result": "W"
+        }
+      ],
+      "nrfi": [
+        {
+          "k": "BOS@LAA",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "DET@TEX",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "MIA@ATH",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "MIL@AZ",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "PHI@KC",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "SD@LAD",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "SF@COL",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "STL@CHC",
+          "pick": "NRFI",
+          "result": "L"
+        },
+        {
+          "k": "TB@HOU",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "TOR@SEA",
+          "pick": "NRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [
+        {
+          "k": "BOS@LAA",
+          "pick": "OVER",
+          "result": "W"
+        },
+        {
+          "k": "CWS@CLE",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "DET@TEX",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "MIA@ATH",
+          "pick": "UNDER",
+          "result": "L"
+        },
+        {
+          "k": "PHI@KC",
+          "pick": "OVER",
+          "result": "L"
+        },
+        {
+          "k": "SF@COL",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "TB@HOU",
+          "pick": "OVER",
+          "result": "L"
+        }
+      ],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "BOS@LAA",
+        "side": "BOS",
+        "price": -156,
+        "ev_pct": -0.1352,
+        "result": "win",
+        "profit_units": 0.641
+      },
+      {
+        "game": "DET@TEX",
+        "side": "DET",
+        "price": -1470,
+        "ev_pct": -0.4446,
+        "result": "win",
+        "profit_units": 0.068
+      },
+      {
+        "game": "MIA@ATH",
+        "side": "ATH",
+        "price": 246,
+        "ev_pct": 1.0552,
+        "result": "loss",
+        "profit_units": -1.0
+      },
+      {
+        "game": "MIL@AZ",
+        "side": "AZ",
+        "price": -220,
+        "ev_pct": -0.2436,
+        "result": "win",
+        "profit_units": 0.4545
+      },
+      {
+        "game": "SD@LAD",
+        "side": "LAD",
+        "price": -225,
+        "ev_pct": -0.142,
+        "result": "loss",
+        "profit_units": -1.0
+      }
+    ],
+    "summary": {
+      "f5": "4-3-1",
+      "sharp": "2-2",
+      "hr": "7-44",
+      "nrfi": "6-4",
+      "totals": "4-3",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}

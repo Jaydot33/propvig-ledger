@@ -1,0 +1,403 @@
+{
+  "date": "2026-07-08",
+  "locked_at": "2026-07-09T02:00:17",
+  "content_hash": "e828ae1239b9733dd4dcf54de8ebc706dd05050032b04e92ceefd928742a4d8a",
+  "prev_hash": "93f0e3a72cef49256b9fc2d96b86698cc1893a04e0790f46025993678963f63b",
+  "chain_hash": "b9fba7bd0495f936cf2dd8e596a2a9c0ec0ed455059a7f573d4014eb04b0cf2d",
+  "content": {
+    "date": "2026-07-08",
+    "lanes": {
+      "f5": [
+        {
+          "k": "ATH@DET",
+          "pick": "DET",
+          "result": "W"
+        },
+        {
+          "k": "AZ@SD",
+          "pick": "SD",
+          "result": "W"
+        },
+        {
+          "k": "KC@NYM",
+          "pick": "NYM",
+          "result": "W"
+        },
+        {
+          "k": "MIL@STL",
+          "pick": "MIL",
+          "result": "L"
+        },
+        {
+          "k": "NYY@TB",
+          "pick": "TB",
+          "result": "W"
+        },
+        {
+          "k": "SEA@MIA",
+          "pick": "SEA",
+          "result": "L"
+        },
+        {
+          "k": "TOR@SF",
+          "pick": "TOR",
+          "result": "W"
+        }
+      ],
+      "sharp": [],
+      "hr": [
+        {
+          "k": "Brandon Marsh",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Bryce Harper",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Bryce Harper",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Carter Jensen",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Cole Carrigg",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Cole Carrigg",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Cole Carrigg",
+          "pick": "value",
+          "result": "L"
+        },
+        {
+          "k": "Colson Montgomery",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Curtis Mead",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Esmerlyn Valdez",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Esmerlyn Valdez",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "Freddie Freeman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Garrett Mitchell",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Garrett Mitchell",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Hunter Goodman",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Hunter Goodman",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Hunter Goodman",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "JJ Bleday",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Jackson Chourio",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Jake Bauers",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Jake McCarthy",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "James Wood",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "James Wood",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Joc Pederson",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jordan Walker",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Jordan Walker",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jose Siri",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Juan Soto",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Kazuma Okamoto",
+          "pick": "listed",
+          "result": "W"
+        },
+        {
+          "k": "Kyle Karros",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Kyle Schwarber",
+          "pick": "likely",
+          "result": "W"
+        },
+        {
+          "k": "Kyle Schwarber",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Max Muncy",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Michael Harris II",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "posted",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Moniak",
+          "pick": "value",
+          "result": "L"
+        },
+        {
+          "k": "Miguel Vargas",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Mike Trout",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Mike Trout",
+          "pick": "value",
+          "result": "W"
+        },
+        {
+          "k": "Mookie Betts",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Nelson Velázquez",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "Randal Grichuk",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Shohei Ohtani",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Spencer Steer",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "TJ Rumfield",
+          "pick": "listed",
+          "result": "L"
+        },
+        {
+          "k": "TJ Rumfield",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Yordan Alvarez",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "Zach Neto",
+          "pick": "top_prob",
+          "result": "L"
+        }
+      ],
+      "nrfi": [
+        {
+          "k": "ATH@DET",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "BOS@CWS",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "CHC@BAL",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "CLE@MIN",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "COL@LAD",
+          "pick": "YRFI",
+          "result": "W"
+        },
+        {
+          "k": "NYY@TB",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "PHI@CIN",
+          "pick": "YRFI",
+          "result": "L"
+        },
+        {
+          "k": "SEA@MIA",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "TOR@SF",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [
+        {
+          "k": "ATL@PIT",
+          "pick": "OVER",
+          "result": "L"
+        },
+        {
+          "k": "AZ@SD",
+          "pick": "UNDER",
+          "result": "L"
+        }
+      ],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "ATH@DET",
+        "side": "DET",
+        "price": -140,
+        "ev_pct": -0.1086,
+        "result": "win",
+        "profit_units": 0.7143
+      },
+      {
+        "game": "AZ@SD",
+        "side": "SD",
+        "price": -120,
+        "ev_pct": -0.0338,
+        "result": "win",
+        "profit_units": 0.8333
+      },
+      {
+        "game": "KC@NYM",
+        "side": "NYM",
+        "price": -147,
+        "ev_pct": -0.1145,
+        "result": "win",
+        "profit_units": 0.6803
+      }
+    ],
+    "summary": {
+      "f5": "5-2",
+      "sharp": "0-0",
+      "hr": "7-44",
+      "nrfi": "5-4",
+      "totals": "0-2",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
