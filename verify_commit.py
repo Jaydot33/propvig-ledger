@@ -9,10 +9,15 @@ For each day that has BOTH a commitment and a reveal this proves, and refuses to
      amended/overwritten/re-added. Any second commit touching it is rejected. The live bytes must
      equal the bytes at that commit.
 
-  2. TRUSTED TIME. The "published before play" witness is GitHub's SERVER-ISSUED workflow-run
-     `created_at` for that exact commit SHA (via `gh api`). No local git author/committer date and
-     no self-reported `committedAt` is ever trusted. If the server timestamp cannot be fetched,
-     the day FAILS CLOSED (not counted) — it is never assumed witnessed.
+  2. TRUSTED TIME. The "published before play" witness is GitHub's SERVER-ISSUED PushEvent
+     `created_at` (Events API, via `gh api`) for the push that introduced that exact commit SHA —
+     GitHub's own record of when it received the push, which the pusher cannot set. No local git
+     author/committer date and no self-reported `committedAt` is ever trusted. If the server
+     timestamp cannot be fetched, the day FAILS CLOSED (not counted) — never assumed witnessed.
+     (A GitHub Actions witness workflow can corroborate this once the repo's token has the
+     `workflow` scope; it is optional — the Events API already provides the trusted timestamp.
+     A previously-captured server timestamp is preserved so an aged-out event cannot un-prove a
+     day whose immutability + hash + reveal integrity still verify.)
 
   3. ORDERING. The server timestamp must be strictly before the card's earliest event.
 
@@ -57,12 +62,15 @@ def git(*args):
     return subprocess.run(["git", "-C", HERE, *args], capture_output=True, text=True, timeout=20)
 
 
+def git_ok():
+    """True if HERE is a usable git repo (works even on an empty repo with no commits yet)."""
+    return git("rev-parse", "--git-dir").returncode == 0
+
+
 def commits_touching(rel):
-    """All commit SHAs that ever touched `rel`, newest first. Empty if untracked / git absent."""
+    """All commit SHAs that ever touched `rel`, newest first. [] if untracked or no history yet."""
     out = git("log", "--format=%H", "--", rel)
-    if out.returncode != 0:
-        return None
-    return [l for l in out.stdout.splitlines() if l.strip()]
+    return [l for l in out.stdout.splitlines() if l.strip()] if out.returncode == 0 else []
 
 
 def bytes_at(sha, rel):
@@ -78,20 +86,46 @@ def repo_slug():
     return m.group(1) if m else None
 
 
-def server_created_at(sha, slug):
-    """GitHub's own record of when it received this commit — the run's server-issued created_at.
-    Returns a tz-aware datetime, or None if unavailable (fail closed)."""
+def _sha_in_push(sha, payload):
+    """True if `sha` was introduced by this push. Exact head match covers the automation (each
+    commitment is pushed as a lone commit → head == sha). Otherwise fall back to a git range
+    check: reachable from head, not already reachable from `before`."""
+    head = payload.get("head")
+    if head == sha:
+        return True
+    before = payload.get("before")
+    if not head:
+        return False
+    reachable = git("merge-base", "--is-ancestor", sha, head).returncode == 0
+    if not reachable:
+        return False
+    if before and re.fullmatch(r"0{40}", before):
+        return True  # branch creation push
+    if before:
+        already = git("merge-base", "--is-ancestor", sha, before).returncode == 0
+        return not already
+    return True
+
+
+def trusted_push_time(sha, slug):
+    """GitHub's server-issued timestamp for the push that introduced `sha`: the PushEvent
+    created_at from the Events API. The pusher cannot set it. None if unavailable (fail closed)."""
     if not slug:
         return None
     try:
-        out = subprocess.run(
-            ["gh", "api", f"repos/{slug}/actions/runs?head_sha={sha}&per_page=100"],
-            capture_output=True, text=True, timeout=30)
+        out = subprocess.run(["gh", "api", f"repos/{slug}/events?per_page=100"],
+                             capture_output=True, text=True, timeout=30)
         if out.returncode != 0:
             return None
-        runs = (json.loads(out.stdout) or {}).get("workflow_runs") or []
-        times = [parse_ts(r.get("created_at")) for r in runs if r.get("created_at")]
-        times = [t for t in times if t]
+        events = json.loads(out.stdout) or []
+        times = []
+        for e in events:
+            if e.get("type") != "PushEvent":
+                continue
+            if _sha_in_push(sha, e.get("payload") or {}):
+                t = parse_ts(e.get("created_at"))
+                if t:
+                    times.append(t)
         return min(times) if times else None
     except Exception:
         return None
@@ -127,9 +161,20 @@ def reveal_integrity(commit, reveal):
 
 def main():
     state = {"pregameWitnessed": 0, "dates": [], "verdicts": {},
-             "trustedSource": "github-actions workflow_run.created_at",
+             "trustedSource": "github Events API PushEvent.created_at (server clock)",
              "repo": None, "hardFailures": [],
              "checkedAtInfoOnly": datetime.utcnow().replace(microsecond=0).isoformat() + "Z"}
+
+    # Prior witnessed days (sticky): once GitHub's server timestamp is captured for an immutable
+    # commit, an aged-out Events API entry must not un-prove it — integrity is re-checked below.
+    prior = {}
+    try:
+        _old = json.load(open(STATE_PATH))
+        for d, v in (_old.get("verdicts") or {}).items():
+            if v.get("status") == "WITNESSED" and v.get("witnessSha") and v.get("serverTimestamp"):
+                prior[d] = v
+    except Exception:
+        prior = {}
 
     if not os.path.isdir(COMMITS):
         print("No commitments/ directory — 0 pregame-witnessed days.")
@@ -139,7 +184,7 @@ def main():
 
     slug = repo_slug()
     state["repo"] = slug
-    if commits_touching(".") is None:
+    if not git_ok():
         print("FAIL: not a git repo / git unavailable — cannot establish immutability. Failing closed.")
         state["hardFailures"].append("git-unavailable")
         _write_state(state)
@@ -183,15 +228,27 @@ def main():
         if not ok:
             _verdict(state, date, "FAIL", why, sha=witness_sha); hard_fail = True; continue
 
-        # (2) trusted server timestamp — fail closed if unavailable.
-        server_ts = server_created_at(witness_sha, slug)
+        # (2) trusted server timestamp (GitHub Events API) — fail closed if unavailable.
+        server_ts = trusted_push_time(witness_sha, slug)
         earliest = parse_ts(commit.get("earliestEventStart"))
-        if server_ts is None:
-            _verdict(state, date, "UNCOUNTED", "no GitHub server timestamp for this commit yet "
-                     "(workflow run not found) — not counted", sha=witness_sha); continue
         if earliest is None:
             _verdict(state, date, "UNCOUNTED", "commitment has no earliestEventStart — cannot order",
                      sha=witness_sha); continue
+        # durability: preserve a previously-captured server timestamp for this exact immutable
+        # commit if the live event has aged out of the Events API window.
+        if server_ts is None and prior.get(date, {}).get("witnessSha") == witness_sha:
+            rec = parse_ts(prior[date].get("serverTimestamp"))
+            if rec and rec < earliest:
+                state["pregameWitnessed"] += 1; state["dates"].append(date)
+                _verdict(state, date, "WITNESSED",
+                         f"card matches · published pregame by GitHub server clock "
+                         f"({rec.isoformat()} < {earliest.isoformat()}) · server timestamp previously "
+                         f"captured (Events API), integrity re-verified · "
+                         f"{commit.get('officialPickCount')} official picks",
+                         sha=witness_sha, serverTs=rec.isoformat()); continue
+        if server_ts is None:
+            _verdict(state, date, "UNCOUNTED", "no GitHub server (Events API) timestamp for this "
+                     "commit yet — not counted", sha=witness_sha); continue
         # (3) ordering
         if server_ts >= earliest:
             _verdict(state, date, "UNCOUNTED",
