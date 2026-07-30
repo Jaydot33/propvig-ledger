@@ -1,25 +1,39 @@
 #!/usr/bin/env python3
-"""Verify propvig's PREGAME commitments — the honest "before play" proof. Stdlib only.
+"""Verify propvig's PREGAME commitments — the honest "before play" proof. Stdlib + `gh` only.
 
-    python3 verify_commit.py
+    python3 verify_commit.py [--state <path>]
 
-For each day that has both a commitment and a reveal, this proves:
-  1. SHA-256(revealed canonical card + nonce) == the published commit_hash
-     → nothing in the card changed after commitment; only result fields were added
-     (results live outside the hashed card, in the reveal's `results`).
-  2. The commitment was published BEFORE the earliest event.
-     The authoritative witness is this file's Git commit timestamp (GitHub's clock, not
-     ours). We check the self-reported committedAt here, and — when run inside the git repo
-     — also the real commit time via `git log`.
+For each day that has BOTH a commitment and a reveal this proves, and refuses to count otherwise:
 
-Only days that pass BOTH checks are counted as pregame publicly witnessed. A day with just a
-postgame seal (see verify.py) is immutable-since-publication, but is NOT pregame-witnessed.
+  1. IMMUTABILITY. The commitment file was introduced by exactly ONE git commit and never
+     amended/overwritten/re-added. Any second commit touching it is rejected. The live bytes must
+     equal the bytes at that commit.
+
+  2. TRUSTED TIME. The "published before play" witness is GitHub's SERVER-ISSUED workflow-run
+     `created_at` for that exact commit SHA (via `gh api`). No local git author/committer date and
+     no self-reported `committedAt` is ever trusted. If the server timestamp cannot be fetched,
+     the day FAILS CLOSED (not counted) — it is never assumed witnessed.
+
+  3. ORDERING. The server timestamp must be strictly before the card's earliest event.
+
+  4. CARD INTEGRITY. sha256(revealed canonical card + nonce) == the committed hash (nothing in
+     the card changed after commitment; results live outside the hashed card).
+
+  5. COMPLETE REVEAL. The reveal's result rows are exactly the committed official pick ids — no
+     missing, no extra, no duplicate — and every result is terminal (W/L/P/Void).
+
+Integrity failures (1, 4, 5) exit NONZERO. "Can't witness yet" states (no reveal, no server
+timestamp, late push, missing earliest) are UNCOUNTED but not hard failures. The witnessed count
++ per-day verdicts are written to a machine-readable state file that the site consumes verbatim.
 """
-import json, hashlib, os, sys, subprocess, glob
-from datetime import datetime, timezone
+import json, hashlib, os, sys, subprocess, glob, re
+from datetime import datetime
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.environ.get("PROPVIG_LEDGER", os.path.dirname(os.path.abspath(__file__)))
 COMMITS = os.path.join(HERE, "commitments")
+STATE_PATH = os.environ.get("PROPVIG_WITNESS_STATE",
+                            "/home/jaydot33/hr-targets/.cache/witness_state.json")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def canon(obj):
@@ -27,7 +41,7 @@ def canon(obj):
 
 
 def commit_hash(card, nonce):
-    return hashlib.sha256((canon(card) + nonce).encode()).hexdigest()
+    return hashlib.sha256((canon(card) + str(nonce)).encode()).hexdigest()
 
 
 def parse_ts(s):
@@ -39,63 +53,191 @@ def parse_ts(s):
         return None
 
 
-def git_commit_time(path):
-    """The real GitHub witness: when this file was first committed. None if git unavailable."""
+def git(*args):
+    return subprocess.run(["git", "-C", HERE, *args], capture_output=True, text=True, timeout=20)
+
+
+def commits_touching(rel):
+    """All commit SHAs that ever touched `rel`, newest first. Empty if untracked / git absent."""
+    out = git("log", "--format=%H", "--", rel)
+    if out.returncode != 0:
+        return None
+    return [l for l in out.stdout.splitlines() if l.strip()]
+
+
+def bytes_at(sha, rel):
+    out = git("show", f"{sha}:{rel}")
+    return out.stdout if out.returncode == 0 else None
+
+
+def repo_slug():
+    out = git("remote", "get-url", "origin")
+    if out.returncode != 0:
+        return None
+    m = re.search(r"github\.com[:/]+([^/]+/[^/]+?)(?:\.git)?\s*$", out.stdout.strip())
+    return m.group(1) if m else None
+
+
+def server_created_at(sha, slug):
+    """GitHub's own record of when it received this commit — the run's server-issued created_at.
+    Returns a tz-aware datetime, or None if unavailable (fail closed)."""
+    if not slug:
+        return None
     try:
         out = subprocess.run(
-            ["git", "-C", HERE, "log", "--diff-filter=A", "--format=%aI", "--", path],
-            capture_output=True, text=True, timeout=10)
-        lines = [l for l in out.stdout.splitlines() if l.strip()]
-        return parse_ts(lines[-1]) if lines else None
+            ["gh", "api", f"repos/{slug}/actions/runs?head_sha={sha}&per_page=100"],
+            capture_output=True, text=True, timeout=30)
+        if out.returncode != 0:
+            return None
+        runs = (json.loads(out.stdout) or {}).get("workflow_runs") or []
+        times = [parse_ts(r.get("created_at")) for r in runs if r.get("created_at")]
+        times = [t for t in times if t]
+        return min(times) if times else None
     except Exception:
         return None
 
 
+def reveal_integrity(commit, reveal):
+    """Returns (ok, reason). Card hash + complete/exact/terminal results. Hard-fail checks."""
+    card = reveal.get("card")
+    if not isinstance(card, dict) or not isinstance(card.get("official"), list):
+        return False, "reveal card missing official[] list"
+    recomputed = commit_hash(card, reveal.get("nonce", ""))
+    if recomputed != commit.get("commitHash"):
+        return False, (f"card hash {recomputed[:12]} != committed {str(commit.get('commitHash'))[:12]} "
+                       "(card changed after commitment)")
+    official_ids = [p.get("id") for p in card["official"]]
+    if len(official_ids) != len(set(official_ids)):
+        return False, "duplicate official pick ids in card"
+    results = reveal.get("results")
+    if not isinstance(results, list):
+        return False, "reveal has no results[]"
+    res_ids = [r.get("id") for r in results]
+    if len(res_ids) != len(set(res_ids)):
+        return False, "duplicate result ids"
+    if set(res_ids) != set(official_ids):
+        extra = sorted(set(res_ids) - set(official_ids))
+        missing = sorted(set(official_ids) - set(res_ids))
+        return False, f"result set != official set (extra={extra[:5]}, missing={missing[:5]})"
+    bad = [r.get("id") for r in results if str(r.get("result") or "").upper() not in ("W", "L", "P", "VOID")]
+    if bad:
+        return False, f"{len(bad)} non-terminal/null result(s): {bad[:5]}"
+    return True, "ok"
+
+
 def main():
+    state = {"pregameWitnessed": 0, "dates": [], "verdicts": {},
+             "trustedSource": "github-actions workflow_run.created_at",
+             "repo": None, "hardFailures": [],
+             "checkedAtInfoOnly": datetime.utcnow().replace(microsecond=0).isoformat() + "Z"}
+
     if not os.path.isdir(COMMITS):
-        print("No commitments/ directory yet — 0 pregame-witnessed days.")
+        print("No commitments/ directory — 0 pregame-witnessed days.")
+        _write_state(state)
         print("PREGAME-WITNESSED: 0")
         sys.exit(0)
 
-    commit_files = sorted(glob.glob(os.path.join(COMMITS, "*.commit.json")))
-    witnessed = 0
-    total = 0
-    for cf in commit_files:
+    slug = repo_slug()
+    state["repo"] = slug
+    if commits_touching(".") is None:
+        print("FAIL: not a git repo / git unavailable — cannot establish immutability. Failing closed.")
+        state["hardFailures"].append("git-unavailable")
+        _write_state(state)
+        sys.exit(1)
+
+    hard_fail = False
+    for cf in sorted(glob.glob(os.path.join(COMMITS, "*.commit.json"))):
         date = os.path.basename(cf)[: -len(".commit.json")]
+        if not DATE_RE.match(date):
+            continue  # ignore non-date files (e.g. self-tests)
+        rel = f"commitments/{date}.commit.json"
         rf = os.path.join(COMMITS, f"{date}.reveal.json")
-        total += 1
-        commit = json.load(open(cf))
+        try:
+            commit = json.load(open(cf))
+        except Exception as e:
+            _verdict(state, date, "FAIL", f"unreadable commitment ({e})"); hard_fail = True; continue
+
+        # (1) immutability: exactly one commit ever touched the file, bytes unchanged since.
+        touches = commits_touching(rel)
+        if not touches:
+            _verdict(state, date, "UNCOUNTED", "commitment not yet pushed to git"); continue
+        if len(touches) != 1:
+            _verdict(state, date, "FAIL", f"commitment file touched by {len(touches)} commits "
+                     "(expected 1) — not immutable"); hard_fail = True; continue
+        witness_sha = touches[0]
+        live = open(cf).read()
+        if bytes_at(witness_sha, rel) != live:
+            _verdict(state, date, "FAIL", "live bytes differ from the committed bytes (overwritten)")
+            hard_fail = True; continue
+
         if not os.path.exists(rf):
-            print(f"pending  {date}: committed ({commit.get('pickCount')} picks), not yet revealed")
-            continue
-        reveal = json.load(open(rf))
+            _verdict(state, date, "PENDING", f"committed ({commit.get('officialPickCount')} picks), not yet revealed",
+                     sha=witness_sha); continue
+        try:
+            reveal = json.load(open(rf))
+        except Exception as e:
+            _verdict(state, date, "FAIL", f"unreadable reveal ({e})"); hard_fail = True; continue
 
-        recomputed = commit_hash(reveal.get("card"), reveal.get("nonce", ""))
-        if recomputed != commit.get("commitHash"):
-            print(f"FAIL     {date}: reveal does not match commitment "
-                  f"(recomputed {recomputed[:12]} != committed {str(commit.get('commitHash'))[:12]})")
-            continue
+        # (4,5) card integrity + complete/exact/terminal reveal — hard fail if broken.
+        ok, why = reveal_integrity(commit, reveal)
+        if not ok:
+            _verdict(state, date, "FAIL", why, sha=witness_sha); hard_fail = True; continue
 
+        # (2) trusted server timestamp — fail closed if unavailable.
+        server_ts = server_created_at(witness_sha, slug)
         earliest = parse_ts(commit.get("earliestEventStart"))
-        git_ts = git_commit_time(f"commitments/{date}.commit.json")
-        witness_ts = git_ts or parse_ts(commit.get("committedAt"))
-        if earliest is None or witness_ts is None:
-            print(f"FAIL     {date}: missing timestamps (earliest={earliest}, witness={witness_ts})")
-            continue
-        if witness_ts >= earliest:
-            src = "git" if git_ts else "self-reported"
-            print(f"FAIL     {date}: commitment published {witness_ts.isoformat()} ({src}) "
-                  f"is NOT before first event {earliest.isoformat()}")
-            continue
+        if server_ts is None:
+            _verdict(state, date, "UNCOUNTED", "no GitHub server timestamp for this commit yet "
+                     "(workflow run not found) — not counted", sha=witness_sha); continue
+        if earliest is None:
+            _verdict(state, date, "UNCOUNTED", "commitment has no earliestEventStart — cannot order",
+                     sha=witness_sha); continue
+        # (3) ordering
+        if server_ts >= earliest:
+            _verdict(state, date, "UNCOUNTED",
+                     f"published {server_ts.isoformat()} (GitHub server) NOT before first event "
+                     f"{earliest.isoformat()} — postgame, not a witness", sha=witness_sha); continue
 
-        witnessed += 1
-        src = "git commit" if git_ts else "self-reported (git unavailable)"
-        print(f"ok       {date}: card matches commitment · published pregame by {src} "
-              f"({witness_ts.isoformat()} < {earliest.isoformat()}) · {commit.get('pickCount')} picks")
+        state["pregameWitnessed"] += 1
+        state["dates"].append(date)
+        _verdict(state, date, "WITNESSED",
+                 f"card matches · published pregame by GitHub server clock "
+                 f"({server_ts.isoformat()} < {earliest.isoformat()}) · "
+                 f"{commit.get('officialPickCount')} official picks",
+                 sha=witness_sha, serverTs=server_ts.isoformat())
 
+    state["dates"].sort()
+    _write_state(state)
     print()
-    print(f"PREGAME-WITNESSED: {witnessed}  (of {total} commitment day(s))")
+    for d in sorted(state["verdicts"]):
+        v = state["verdicts"][d]
+        print(f"{v['status']:<10} {d}: {v['reason']}")
+    print()
+    print(f"PREGAME-WITNESSED: {state['pregameWitnessed']}  (of {len(state['verdicts'])} commitment day(s))")
+    print(f"state -> {STATE_PATH}")
+    if hard_fail:
+        print("HARD FAILURE(S) present — exiting nonzero.")
+        sys.exit(1)
     sys.exit(0)
+
+
+def _verdict(state, date, status, reason, sha=None, serverTs=None):
+    state["verdicts"][date] = {"status": status, "reason": reason}
+    if sha:
+        state["verdicts"][date]["witnessSha"] = sha
+    if serverTs:
+        state["verdicts"][date]["serverTimestamp"] = serverTs
+    if status == "FAIL":
+        state["hardFailures"].append(date)
+
+
+def _write_state(state):
+    try:
+        os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
+        with open(STATE_PATH, "w") as f:
+            json.dump(state, f, indent=1)
+    except Exception as e:
+        print(f"WARN: could not write witness state to {STATE_PATH}: {e}")
 
 
 if __name__ == "__main__":
