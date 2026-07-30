@@ -1,9 +1,0 @@
-{
- "date": "2099-12-31",
- "commitHash": "22e1594e7cd2c6a7cb39d0c09a8e8be6faafa53b219577d05d7709b7d73244ba",
- "algo": "sha256(canonical_card_json + nonce)",
- "officialPickCount": 1,
- "researchLeanCount": 0,
- "earliestEventStart": "2099-12-31T00:00:00Z",
- "modelVersion": "PV-MLB-props-v3"
-}
