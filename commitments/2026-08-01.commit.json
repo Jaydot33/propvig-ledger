@@ -1,0 +1,11 @@
+{
+ "date": "2026-08-01",
+ "commitHash": "e4a1410871bc8c6c65b3837c266e8cfeaf6bca3a15dada54133cd4fca960606b",
+ "algo": "sha256(canonical_card_json + nonce)",
+ "officialPickCount": 39,
+ "researchLeanCount": 136,
+ "earliestEventStart": "2026-08-01T19:07:00+00:00",
+ "modelVersion": "PV-MLB-props-v3",
+ "localClockAtInfoOnly": "2026-08-01T15:30:37Z",
+ "note": "Card hidden (SHA-256 only) until reveal. The official board is committed EXACTLY as published; research leans are a separate labeled collection. Trusted witness time = GitHub's server-issued Events API PushEvent.created_at for the commit that first published THIS file, bound to that immutable commit SHA (see verify_commit.py). No local git author/committer date or self-reported clock is trusted."
+}
