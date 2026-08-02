@@ -137,10 +137,22 @@ KALSHI_META_KEYS = {"schemaVersion", "status", "count", "root", "earliestEventSt
                     "reasonCodes"}
 
 
+def canon_utf8(obj):
+    """Canonical JSON with ensure_ascii=False — the producer's byte encoding.
+
+    hrtargets freezes decision ids and set roots over UTF-8 bytes (canonical_bytes uses
+    ensure_ascii=False); the ledger's own canon() ASCII-escapes. One accented player name
+    in a selection string would make the two hash differently and hard-FAIL the public
+    chain on ordinary data, so the Kalshi recomputations MUST use the producer's encoding.
+    The card hash keeps canon() — commit_card.py hashes the card with the ASCII default,
+    and changing that would break every existing commitment."""
+    return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+
+
 def _kalshi_decision_id(payload):
     unsigned = dict(payload)
     unsigned.pop("decision_id", None)
-    return hashlib.sha256(canon(unsigned).encode()).hexdigest()
+    return hashlib.sha256(canon_utf8(unsigned).encode("utf-8")).hexdigest()
 
 
 def _aware_ts(s):
@@ -201,7 +213,7 @@ def _kalshi_set_integrity(commit, card):
         return False, "kalshi decisions are not sorted by decision_id"
     if card_meta.get("count") != len(card_rows):
         return False, f"kalshi count {card_meta.get('count')} != {len(card_rows)} decisions"
-    recomputed = hashlib.sha256(canon(card_rows).encode()).hexdigest()
+    recomputed = hashlib.sha256(canon_utf8(card_rows).encode("utf-8")).hexdigest()
     if card_meta.get("root") != recomputed:
         return False, "kalshi set root does not recompute from the revealed decisions"
     if starts:

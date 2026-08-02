@@ -24,9 +24,11 @@ def check(name, fn):
         print(f"  FAIL {name}: {e}")
 
 
-def make_decision(ticker="KXMLBKS-26AUG021335PHIBAL-X-6", start="2026-08-02T17:35:00+00:00"):
+def make_decision(ticker="KXMLBKS-26AUG021335PHIBAL-X-6", start="2026-08-02T17:35:00+00:00",
+                  selection="Fixture Pitcher UNDER 5.5 k"):
     d = {"schema_version": "kalshi-decision-v1", "strategy_id": "kalshi_mlb_k_pv3_taker_v1",
          "market_ticker": ticker, "side": "NO", "model_probability": "0.6390",
+         "selection": selection,
          "event_start": start, "created_at": "2026-08-02T12:00:00+00:00", "eligible": True}
     d["decision_id"] = vc._kalshi_decision_id(d)
     return d
@@ -34,7 +36,7 @@ def make_decision(ticker="KXMLBKS-26AUG021335PHIBAL-X-6", start="2026-08-02T17:3
 
 def make_versioned(decisions):
     rows = sorted(decisions, key=lambda r: r["decision_id"])
-    root = hashlib.sha256(vc.canon(rows).encode()).hexdigest()
+    root = hashlib.sha256(vc.canon_utf8(rows).encode("utf-8")).hexdigest()
     starts = [r["event_start"] for r in rows]
     earliest = min(starts) if starts else None
     meta = {"schemaVersion": "kalshi-decision-set-v1", "status": "ok", "count": len(rows),
@@ -145,6 +147,30 @@ def test_missing_metadata_key_fails():
     assert not ok and "metadata keys" in why, why
 
 
+def test_non_ascii_selection_verifies():
+    # The producer freezes ids/roots over UTF-8 bytes (ensure_ascii=False). One accented
+    # player name must NOT hard-fail the public chain -- the reviewer reproduced the
+    # divergence when the verifier used the ASCII-escaping canon for these hashes.
+    commit, reveal = make_versioned([
+        make_decision(selection="José Ramírez UNDER 5.5 k"),
+        make_decision(ticker="KXMLBKS-26AUG021335PHIBAL-Y-6",
+                      selection="Cristopher Sánchez OVER 6.5 k")])
+    ok, why = vc.reveal_integrity(commit, reveal)
+    assert ok, why
+    # cross-check against the producer's own hashing when hrtargets is importable
+    import sys as _sys
+    _sys.path.insert(0, "/home/jaydot33/.worktrees/hr-targets/kalshi-evidence-recovery")
+    try:
+        from hrtargets.kalshi_decision import compute_decision_id
+        for row in reveal["card"]["kalshiDecisions"]:
+            assert row["decision_id"] == compute_decision_id(row), \
+                "verifier and producer disagree on a non-ASCII decision id"
+    except ImportError:
+        pass
+    finally:
+        _sys.path.pop(0)
+
+
 def test_one_sided_kalshi_keys_fail():
     commit, reveal = make_versioned([make_decision()])
     del commit["kalshiDecisionSet"]
@@ -162,6 +188,7 @@ def main():
     check("a degraded set is exactly empty", test_degraded_set_is_exactly_empty)
     check("a naive event time fails an ok set", test_naive_event_time_fails_an_ok_set)
     check("a missing metadata key fails", test_missing_metadata_key_fails)
+    check("non-ASCII selections verify (producer encoding)", test_non_ascii_selection_verifies)
     check("one-sided kalshi keys fail", test_one_sided_kalshi_keys_fail)
     if fails:
         print(f"\n{len(fails)} FAILURE(S)")
