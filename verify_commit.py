@@ -131,6 +131,111 @@ def trusted_push_time(sha, slug):
         return None
 
 
+KALSHI_SET_SCHEMA = "kalshi-decision-set-v1"
+KALSHI_EMPTY_ROOT = hashlib.sha256(b"[]").hexdigest()
+KALSHI_META_KEYS = {"schemaVersion", "status", "count", "root", "earliestEventStart",
+                    "reasonCodes"}
+
+
+def canon_utf8(obj):
+    """Canonical JSON with ensure_ascii=False — the producer's byte encoding.
+
+    hrtargets freezes decision ids and set roots over UTF-8 bytes (canonical_bytes uses
+    ensure_ascii=False); the ledger's own canon() ASCII-escapes. One accented player name
+    in a selection string would make the two hash differently and hard-FAIL the public
+    chain on ordinary data, so the Kalshi recomputations MUST use the producer's encoding.
+    The card hash keeps canon() — commit_card.py hashes the card with the ASCII default,
+    and changing that would break every existing commitment."""
+    return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+
+
+def _kalshi_decision_id(payload):
+    unsigned = dict(payload)
+    unsigned.pop("decision_id", None)
+    return hashlib.sha256(canon_utf8(unsigned).encode("utf-8")).hexdigest()
+
+
+def _aware_ts(s):
+    ts = parse_ts(s)
+    if ts is None or ts.tzinfo is None or ts.utcoffset() is None:
+        return None
+    return ts
+
+
+def _kalshi_set_integrity(commit, card):
+    """(ok, reason) for the optional Kalshi qualification set inside a revealed card.
+
+    Legacy cards — no Kalshi keys anywhere — verify exactly as before; this feature can
+    never retroactively fail a pre-feature day. A versioned card is held to the full
+    contract: exact metadata keys, recomputed decision IDs and sorted-set root, count
+    agreement, commitment/card metadata binding, an earliest time that truly is the
+    minimum of the decisions (a lying earliest could loosen the pregame ordering gate),
+    and a degraded set that is exactly empty with its reasons recorded."""
+    card_meta = card.get("kalshiDecisionSet")
+    card_rows = card.get("kalshiDecisions")
+    commit_meta = commit.get("kalshiDecisionSet")
+    if card_meta is None and card_rows is None and commit_meta is None:
+        return True, "legacy"
+    if card_meta is None or card_rows is None or commit_meta is None:
+        return False, "kalshi keys present on one side only (card vs commitment)"
+    if not isinstance(card_meta, dict) or set(card_meta) != KALSHI_META_KEYS:
+        got = sorted(card_meta) if isinstance(card_meta, dict) else "?"
+        return False, f"kalshi set metadata keys {got} != required"
+    if card_meta.get("schemaVersion") != KALSHI_SET_SCHEMA:
+        return False, f"unknown kalshi set schema {card_meta.get('schemaVersion')!r}"
+    for key in ("schemaVersion", "status", "count", "root", "reasonCodes"):
+        if commit_meta.get(key) != card_meta.get(key):
+            return False, f"kalshi set {key} differs between commitment and revealed card"
+    status = card_meta.get("status")
+    if status == "degraded":
+        if (card_meta.get("count") != 0 or card_meta.get("root") != KALSHI_EMPTY_ROOT
+                or card_rows != [] or not card_meta.get("reasonCodes")):
+            return False, "degraded kalshi set must be exactly empty with nonempty reasonCodes"
+        return True, "degraded-empty"
+    if status != "ok":
+        return False, f"kalshi set status {status!r} is neither ok nor degraded"
+    if not isinstance(card_rows, list):
+        return False, "kalshiDecisions is not a list"
+    ids, starts = [], []
+    for row in card_rows:
+        if not isinstance(row, dict):
+            return False, "kalshi decision is not an object"
+        if row.get("decision_id") != _kalshi_decision_id(row):
+            return False, f"kalshi decision id does not recompute ({str(row.get('decision_id'))[:12]}…)"
+        ids.append(str(row["decision_id"]))
+        ts = _aware_ts(row.get("event_start"))
+        if ts is None:
+            return False, "kalshi decision event_start missing/naive in an ok set"
+        starts.append((ts, str(row.get("event_start"))))
+    if len(ids) != len(set(ids)):
+        return False, "duplicate kalshi decision ids"
+    if ids != sorted(ids):
+        return False, "kalshi decisions are not sorted by decision_id"
+    if card_meta.get("count") != len(card_rows):
+        return False, f"kalshi count {card_meta.get('count')} != {len(card_rows)} decisions"
+    recomputed = hashlib.sha256(canon_utf8(card_rows).encode("utf-8")).hexdigest()
+    if card_meta.get("root") != recomputed:
+        return False, "kalshi set root does not recompute from the revealed decisions"
+    if starts:
+        true_earliest = min(starts, key=lambda item: item[0])[1]
+        if card_meta.get("earliestEventStart") != true_earliest:
+            return False, ("kalshi earliestEventStart is not the minimum of the revealed "
+                           "decisions — a lying earliest could loosen the ordering gate")
+    elif card_meta.get("earliestEventStart") is not None:
+        return False, "empty ok set carries a non-null earliestEventStart"
+    return True, "ok"
+
+
+def kalshi_witnessed_ids(reveal):
+    """Decision IDs eligible to count as witnessed IF the day itself is WITNESSED.
+    Empty for degraded or absent sets — exclusion is the safe outcome, always."""
+    card = (reveal or {}).get("card") or {}
+    meta = card.get("kalshiDecisionSet") or {}
+    if meta.get("status") != "ok":
+        return []
+    return [str(r.get("decision_id")) for r in (card.get("kalshiDecisions") or [])]
+
+
 def reveal_integrity(commit, reveal):
     """Returns (ok, reason). Card hash + complete/exact/terminal results. Hard-fail checks."""
     card = reveal.get("card")
@@ -156,6 +261,9 @@ def reveal_integrity(commit, reveal):
     bad = [r.get("id") for r in results if str(r.get("result") or "").upper() not in ("W", "L", "P", "VOID")]
     if bad:
         return False, f"{len(bad)} non-terminal/null result(s): {bad[:5]}"
+    kal_ok, kal_why = _kalshi_set_integrity(commit, card)
+    if not kal_ok:
+        return False, f"kalshi decision set: {kal_why}"
     return True, "ok"
 
 
@@ -245,7 +353,8 @@ def main():
                          f"({rec.isoformat()} < {earliest.isoformat()}) · server timestamp previously "
                          f"captured (Events API), integrity re-verified · "
                          f"{commit.get('officialPickCount')} official picks",
-                         sha=witness_sha, serverTs=rec.isoformat()); continue
+                         sha=witness_sha, serverTs=rec.isoformat(),
+                         kalshi=kalshi_witnessed_ids(reveal)); continue
         if server_ts is None:
             _verdict(state, date, "UNCOUNTED", "no GitHub server (Events API) timestamp for this "
                      "commit yet — not counted", sha=witness_sha); continue
@@ -261,7 +370,8 @@ def main():
                  f"card matches · published pregame by GitHub server clock "
                  f"({server_ts.isoformat()} < {earliest.isoformat()}) · "
                  f"{commit.get('officialPickCount')} official picks",
-                 sha=witness_sha, serverTs=server_ts.isoformat())
+                 sha=witness_sha, serverTs=server_ts.isoformat(),
+                 kalshi=kalshi_witnessed_ids(reveal))
 
     state["dates"].sort()
     _write_state(state)
@@ -278,12 +388,17 @@ def main():
     sys.exit(0)
 
 
-def _verdict(state, date, status, reason, sha=None, serverTs=None):
+def _verdict(state, date, status, reason, sha=None, serverTs=None, kalshi=None):
     state["verdicts"][date] = {"status": status, "reason": reason}
     if sha:
         state["verdicts"][date]["witnessSha"] = sha
     if serverTs:
         state["verdicts"][date]["serverTimestamp"] = serverTs
+    if kalshi is not None:
+        # Kalshi decisions are witnessed ONLY on a WITNESSED day with an ok set; every
+        # other day contributes an empty list, and absence stays UNWITNESSED downstream.
+        state["verdicts"][date]["kalshiWitnessedDecisionIds"] = list(kalshi)
+        state["kalshiWitnessedDecisions"] = (state.get("kalshiWitnessedDecisions") or 0) + len(kalshi)
     if status == "FAIL":
         state["hardFailures"].append(date)
 
