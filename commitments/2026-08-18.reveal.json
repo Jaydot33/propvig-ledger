@@ -1,0 +1,2260 @@
+{
+ "date": "2026-08-18",
+ "card": {
+  "official": [
+   {
+    "id": "hr|Esmerlyn Valdez",
+    "srcName": "Esmerlyn Valdez",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Esmerlyn Valdez",
+    "market": "To hit a HR",
+    "line": 450,
+    "side": "Yes",
+    "rawModelProb": 20.7045,
+    "displayModelProb": 20.7,
+    "marketProb": 18.215600000000002,
+    "displayMarketProb": 18.2,
+    "rawEdgePp": 2.489,
+    "displayEdgePp": 2.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Griffin Conine",
+    "srcName": "Griffin Conine",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Griffin Conine",
+    "market": "To hit a HR",
+    "line": 500,
+    "side": "Yes",
+    "rawModelProb": 24.531,
+    "displayModelProb": 24.5,
+    "marketProb": 16.7629,
+    "displayMarketProb": 16.8,
+    "rawEdgePp": 7.768,
+    "displayEdgePp": 7.7,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Junior Caminero",
+    "srcName": "Junior Caminero",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Junior Caminero",
+    "market": "To hit a HR",
+    "line": 400,
+    "side": "Yes",
+    "rawModelProb": 20.244,
+    "displayModelProb": 20.2,
+    "marketProb": 21.0741,
+    "displayMarketProb": 21.1,
+    "rawEdgePp": -0.83,
+    "displayEdgePp": -0.9,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Kyle Schwarber",
+    "srcName": "Kyle Schwarber",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Kyle Schwarber",
+    "market": "To hit a HR",
+    "line": 260,
+    "side": "Yes",
+    "rawModelProb": 23.1734,
+    "displayModelProb": 23.2,
+    "marketProb": 27.142899999999997,
+    "displayMarketProb": 27.1,
+    "rawEdgePp": -3.969,
+    "displayEdgePp": -3.9,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Munetaka Murakami",
+    "srcName": "Munetaka Murakami",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Munetaka Murakami",
+    "market": "To hit a HR",
+    "line": 275,
+    "side": "Yes",
+    "rawModelProb": 31.907400000000003,
+    "displayModelProb": 31.9,
+    "marketProb": 25.2949,
+    "displayMarketProb": 25.3,
+    "rawEdgePp": 6.613,
+    "displayEdgePp": 6.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:05:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Pete Crow-Armstrong",
+    "srcName": "Pete Crow-Armstrong",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Pete Crow-Armstrong",
+    "market": "To hit a HR",
+    "line": 375,
+    "side": "Yes",
+    "rawModelProb": 25.495100000000004,
+    "displayModelProb": 25.5,
+    "marketProb": 22.0183,
+    "displayMarketProb": 22.0,
+    "rawEdgePp": 3.477,
+    "displayEdgePp": 3.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:05:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Shohei Ohtani",
+    "srcName": "Shohei Ohtani",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Shohei Ohtani",
+    "market": "To hit a HR",
+    "line": 210,
+    "side": "Yes",
+    "rawModelProb": 24.601300000000002,
+    "displayModelProb": 24.6,
+    "marketProb": 30.075200000000002,
+    "displayMarketProb": 30.1,
+    "rawEdgePp": -5.474,
+    "displayEdgePp": -5.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "hr|Yordan Alvarez",
+    "srcName": "Yordan Alvarez",
+    "resultKey": "hr_priced_ledger",
+    "lane": "hr",
+    "player": "Yordan Alvarez",
+    "market": "To hit a HR",
+    "line": 240,
+    "side": "Yes",
+    "rawModelProb": 26.1401,
+    "displayModelProb": 26.1,
+    "marketProb": 27.6366,
+    "displayMarketProb": 27.6,
+    "rawEdgePp": -1.497,
+    "displayEdgePp": -1.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|554430|bb_p|1.5|Under",
+    "srcId": "554430",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Zack Wheeler",
+    "market": "Walks",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 60.6,
+    "displayModelProb": 60.6,
+    "marketProb": 49.0,
+    "displayMarketProb": 49.0,
+    "rawEdgePp": 11.7,
+    "displayEdgePp": 11.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|592662|er|2.5|Under",
+    "srcId": "592662",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Robbie Ray",
+    "market": "Earned runs",
+    "line": 2.5,
+    "side": "Under",
+    "rawModelProb": 61.3,
+    "displayModelProb": 61.3,
+    "marketProb": 51.0,
+    "displayMarketProb": 51.0,
+    "rawEdgePp": 10.4,
+    "displayEdgePp": 10.3,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|605141|hrr|2.5|Under",
+    "srcId": "605141",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Mookie Betts",
+    "market": "Hits + Runs + RBI",
+    "line": 2.5,
+    "side": "Under",
+    "rawModelProb": 60.6,
+    "displayModelProb": 60.6,
+    "marketProb": 50.0,
+    "displayMarketProb": 50.0,
+    "rawEdgePp": 10.1,
+    "displayEdgePp": 10.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|605141|tb|1.5|Under",
+    "srcId": "605141",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Mookie Betts",
+    "market": "Total bases",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 57.0,
+    "displayModelProb": 57.0,
+    "marketProb": 48.0,
+    "displayMarketProb": 48.0,
+    "rawEdgePp": 9.5,
+    "displayEdgePp": 9.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|615698|bb_p|1.5|Under",
+    "srcId": "615698",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Cal Quantrill",
+    "market": "Walks",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 72.2,
+    "displayModelProb": 72.2,
+    "marketProb": 62.0,
+    "displayMarketProb": 62.0,
+    "rawEdgePp": 10.0,
+    "displayEdgePp": 10.2,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:05:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|615698|er|1.5|Under",
+    "srcId": "615698",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Cal Quantrill",
+    "market": "Earned runs",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 57.6,
+    "displayModelProb": 57.6,
+    "marketProb": 42.0,
+    "displayMarketProb": 42.0,
+    "rawEdgePp": 15.4,
+    "displayEdgePp": 15.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:05:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|641778|er|3.5|Under",
+    "srcId": "641778",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Eric Lauer",
+    "market": "Earned runs",
+    "line": 3.5,
+    "side": "Under",
+    "rawModelProb": 66.5,
+    "displayModelProb": 66.5,
+    "marketProb": 54.0,
+    "displayMarketProb": 54.0,
+    "rawEdgePp": 12.7,
+    "displayEdgePp": 12.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|663647|hrr|0.5|Under",
+    "srcId": "663647",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Ke'Bryan Hayes",
+    "market": "Hits + Runs + RBI",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 55.1,
+    "displayModelProb": 55.1,
+    "marketProb": 46.0,
+    "displayMarketProb": 46.0,
+    "rawEdgePp": 9.2,
+    "displayEdgePp": 9.1,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|663647|tb|0.5|Under",
+    "srcId": "663647",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Ke'Bryan Hayes",
+    "market": "Total bases",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 57.0,
+    "displayModelProb": 57.0,
+    "marketProb": 48.0,
+    "displayMarketProb": 48.0,
+    "rawEdgePp": 9.3,
+    "displayEdgePp": 9.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|664299|er|2.5|Over",
+    "srcId": "664299",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Cristian Javier",
+    "market": "Earned runs",
+    "line": 2.5,
+    "side": "Over",
+    "rawModelProb": 62.4,
+    "displayModelProb": 62.4,
+    "marketProb": 43.0,
+    "displayMarketProb": 43.0,
+    "rawEdgePp": 19.1,
+    "displayEdgePp": 19.4,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|664299|k|4.5|Under",
+    "srcId": "664299",
+    "srcKey": "k",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Cristian Javier",
+    "market": "Strikeouts",
+    "line": 4.5,
+    "side": "Under",
+    "rawModelProb": 71.1,
+    "displayModelProb": 71.1,
+    "marketProb": 50.0,
+    "displayMarketProb": 50.0,
+    "rawEdgePp": 21.1,
+    "displayEdgePp": 21.1,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|668723|tb|0.5|Under",
+    "srcId": "668723",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Ryan Vilade",
+    "market": "Total bases",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 52.8,
+    "displayModelProb": 52.8,
+    "marketProb": 44.0,
+    "displayMarketProb": 44.0,
+    "rawEdgePp": 9.1,
+    "displayEdgePp": 8.8,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|669236|hrr|0.5|Under",
+    "srcId": "669236",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Jeremiah Jackson",
+    "market": "Hits + Runs + RBI",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 50.9,
+    "displayModelProb": 50.9,
+    "marketProb": 41.0,
+    "displayMarketProb": 41.0,
+    "rawEdgePp": 10.1,
+    "displayEdgePp": 9.9,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:35:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|671096|bb_p|1.5|Over",
+    "srcId": "671096",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Andrew Abbott",
+    "market": "Walks",
+    "line": 1.5,
+    "side": "Over",
+    "rawModelProb": 72.6,
+    "displayModelProb": 72.6,
+    "marketProb": 58.0,
+    "displayMarketProb": 58.0,
+    "rawEdgePp": 14.4,
+    "displayEdgePp": 14.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|671218|hrr|1.5|Under",
+    "srcId": "671218",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Heliot Ramos",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 61.0,
+    "displayModelProb": 61.0,
+    "marketProb": 48.0,
+    "displayMarketProb": 48.0,
+    "rawEdgePp": 13.2,
+    "displayEdgePp": 13.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:35:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|676439|hrr|1.5|Under",
+    "srcId": "676439",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Hunter Feduccia",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 58.3,
+    "displayModelProb": 58.3,
+    "marketProb": 49.0,
+    "displayMarketProb": 49.0,
+    "rawEdgePp": 9.2,
+    "displayEdgePp": 9.3,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|677952|bb_p|0.5|Over",
+    "srcId": "677952",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Braxton Ashcraft",
+    "market": "Walks",
+    "line": 0.5,
+    "side": "Over",
+    "rawModelProb": 75.8,
+    "displayModelProb": 75.8,
+    "marketProb": 64.0,
+    "displayMarketProb": 64.0,
+    "rawEdgePp": 11.3,
+    "displayEdgePp": 11.8,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|678022|er|2.5|Over",
+    "srcId": "678022",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Jack Perkins",
+    "market": "Earned runs",
+    "line": 2.5,
+    "side": "Over",
+    "rawModelProb": 63.9,
+    "displayModelProb": 63.9,
+    "marketProb": 55.0,
+    "displayMarketProb": 55.0,
+    "rawEdgePp": 9.4,
+    "displayEdgePp": 8.9,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|681047|hrr|0.5|Under",
+    "srcId": "681047",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Christian Franklin",
+    "market": "Hits + Runs + RBI",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 53.1,
+    "displayModelProb": 53.1,
+    "marketProb": 44.0,
+    "displayMarketProb": 44.0,
+    "rawEdgePp": 9.4,
+    "displayEdgePp": 9.1,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:35:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|681047|tb|0.5|Under",
+    "srcId": "681047",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Christian Franklin",
+    "market": "Total bases",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 58.6,
+    "displayModelProb": 58.6,
+    "marketProb": 46.0,
+    "displayMarketProb": 46.0,
+    "rawEdgePp": 12.7,
+    "displayEdgePp": 12.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:35:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|681393|hrr|1.5|Under",
+    "srcId": "681393",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Connor Norby",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 62.0,
+    "displayModelProb": 62.0,
+    "marketProb": 52.0,
+    "displayMarketProb": 52.0,
+    "rawEdgePp": 9.8,
+    "displayEdgePp": 10.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|687931|bb_p|1.5|Over",
+    "srcId": "687931",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Carson Whisenhunt",
+    "market": "Walks",
+    "line": 1.5,
+    "side": "Over",
+    "rawModelProb": 76.3,
+    "displayModelProb": 76.3,
+    "marketProb": 60.0,
+    "displayMarketProb": 60.0,
+    "rawEdgePp": 16.5,
+    "displayEdgePp": 16.3,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|690986|bb_p|1.5|Under",
+    "srcId": "690986",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Kyle Harrison",
+    "market": "Walks",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 61.7,
+    "displayModelProb": 61.7,
+    "marketProb": 51.0,
+    "displayMarketProb": 51.0,
+    "rawEdgePp": 10.7,
+    "displayEdgePp": 10.7,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|691777|hrr|2.5|Under",
+    "srcId": "691777",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Max Muncy",
+    "market": "Hits + Runs + RBI",
+    "line": 2.5,
+    "side": "Under",
+    "rawModelProb": 69.0,
+    "displayModelProb": 69.0,
+    "marketProb": 52.0,
+    "displayMarketProb": 52.0,
+    "rawEdgePp": 16.9,
+    "displayEdgePp": 17.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|691777|tb|1.5|Under",
+    "srcId": "691777",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Max Muncy",
+    "market": "Total bases",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 64.0,
+    "displayModelProb": 64.0,
+    "marketProb": 52.0,
+    "displayMarketProb": 52.0,
+    "rawEdgePp": 12.1,
+    "displayEdgePp": 12.0,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|691946|bb_p|2.5|Over",
+    "srcId": "691946",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "George Klassen",
+    "market": "Walks",
+    "line": 2.5,
+    "side": "Over",
+    "rawModelProb": 58.5,
+    "displayModelProb": 58.5,
+    "marketProb": 43.0,
+    "displayMarketProb": 43.0,
+    "rawEdgePp": 15.2,
+    "displayEdgePp": 15.5,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|691946|er|2.5|Under",
+    "srcId": "691946",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "George Klassen",
+    "market": "Earned runs",
+    "line": 2.5,
+    "side": "Under",
+    "rawModelProb": 60.3,
+    "displayModelProb": 60.3,
+    "marketProb": 50.0,
+    "displayMarketProb": 50.0,
+    "rawEdgePp": 10.3,
+    "displayEdgePp": 10.3,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-19T00:10:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|695720|hrr|1.5|Under",
+    "srcId": "695720",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Tommy White",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 54.8,
+    "displayModelProb": 54.8,
+    "marketProb": 44.0,
+    "displayMarketProb": 44.0,
+    "rawEdgePp": 11.1,
+    "displayEdgePp": 10.8,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T23:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|813841|hrr|1.5|Under",
+    "srcId": "813841",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Jonah Cox",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 74.6,
+    "displayModelProb": 74.6,
+    "marketProb": 61.0,
+    "displayMarketProb": 61.0,
+    "rawEdgePp": 13.9,
+    "displayEdgePp": 13.6,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|813841|tb|0.5|Under",
+    "srcId": "813841",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Jonah Cox",
+    "market": "Total bases",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 59.4,
+    "displayModelProb": 59.4,
+    "marketProb": 40.0,
+    "displayMarketProb": 40.0,
+    "rawEdgePp": 19.5,
+    "displayEdgePp": 19.4,
+    "captureTime": "2026-08-18T15:25:51Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-08-18T22:40:00+00:00",
+    "official": true
+   }
+  ],
+  "researchLeans": [
+   {
+    "id": "props|518692|hrr|2.5|Under",
+    "player": "Freddie Freeman",
+    "market": "hrr",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 52.4,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|518876|bb_p|1.5|Over",
+    "player": "Merrill Kelly",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Over",
+    "modelProb": 61.8,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|518876|er|2.5|Under",
+    "player": "Merrill Kelly",
+    "market": "er",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 51.3,
+    "marketProb": 46.0
+   },
+   {
+    "id": "props|521692|tb|1.5|Under",
+    "player": "Salvador Perez",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.7,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|543760|hrr|1.5|Under",
+    "player": "Marcus Semien",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.3,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|543760|tb|1.5|Under",
+    "player": "Marcus Semien",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 74.0,
+    "marketProb": 69.0
+   },
+   {
+    "id": "props|543807|tb|1.5|Under",
+    "player": "George Springer",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.4,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|545121|hrr|1.5|Under",
+    "player": "Ildemaro Vargas",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 54.6,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|545121|tb|1.5|Under",
+    "player": "Ildemaro Vargas",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.7,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|545361|hrr|1.5|Under",
+    "player": "Mike Trout",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.5,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|554430|k|6.5|Under",
+    "player": "Zack Wheeler",
+    "market": "k",
+    "line": 6.5,
+    "side": "Under",
+    "modelProb": 54.4,
+    "marketProb": 41.0
+   },
+   {
+    "id": "props|554430|k|7.5|Under",
+    "player": "Zack Wheeler",
+    "market": "k",
+    "line": 7.5,
+    "side": "Under",
+    "modelProb": 63.1,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|592332|k|6.5|Under",
+    "player": "Kevin Gausman",
+    "market": "k",
+    "line": 6.5,
+    "side": "Under",
+    "modelProb": 62.6,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|592518|hrr|1.5|Under",
+    "player": "Manny Machado",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 53.4,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|592518|tb|1.5|Under",
+    "player": "Manny Machado",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.0,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|592885|hrr|1.5|Under",
+    "player": "Christian Yelich",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.0,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|607259|er|2.5|Under",
+    "player": "Nick Martinez",
+    "market": "er",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 62.8,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|615698|er|2.5|Under",
+    "player": "Cal Quantrill",
+    "market": "er",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 70.7,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|621439|hrr|1.5|Under",
+    "player": "Byron Buxton",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 52.6,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|621493|hrr|1.5|Under",
+    "player": "Taylor Ward",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.5,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|621493|tb|1.5|Under",
+    "player": "Taylor Ward",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 68.5,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|623168|hrr|0.5|Under",
+    "player": "Tyler Heineman",
+    "market": "hrr",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 50.7,
+    "marketProb": 43.0
+   },
+   {
+    "id": "props|623168|tb|0.5|Under",
+    "player": "Tyler Heineman",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 55.3,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|624133|bb_p|1.5|Under",
+    "player": "Ranger Suarez",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 53.4,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|624133|k|4.5|Under",
+    "player": "Ranger Suarez",
+    "market": "k",
+    "line": 4.5,
+    "side": "Under",
+    "modelProb": 53.6,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|624424|hrr|1.5|Under",
+    "player": "Michael Conforto",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.6,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|624424|tb|0.5|Under",
+    "player": "Michael Conforto",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 54.2,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|624428|tb|0.5|Under",
+    "player": "Adam Frazier",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 55.1,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|641680|hrr|1.5|Under",
+    "player": "Jonah Heim",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 55.3,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|641680|tb|1.5|Under",
+    "player": "Jonah Heim",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.0,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|641816|k|4.5|Over",
+    "player": "Tyler Mahle",
+    "market": "k",
+    "line": 4.5,
+    "side": "Over",
+    "modelProb": 55.3,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|642215|tb|0.5|Under",
+    "player": "Weston Wilson",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 58.7,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|645277|hrr|1.5|Under",
+    "player": "Ozzie Albies",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 59.3,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|645277|tb|1.5|Under",
+    "player": "Ozzie Albies",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.6,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|650859|hrr|1.5|Under",
+    "player": "Luis Rengifo",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.9,
+    "marketProb": 51.0
+   },
+   {
+    "id": "props|650859|tb|1.5|Under",
+    "player": "Luis Rengifo",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 68.0,
+    "marketProb": 62.0
+   },
+   {
+    "id": "props|656492|k|5.5|Under",
+    "player": "Foster Griffin",
+    "market": "k",
+    "line": 5.5,
+    "side": "Under",
+    "modelProb": 59.9,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|656555|hrr|1.5|Under",
+    "player": "Rhys Hoskins",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.8,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|656555|tb|0.5|Under",
+    "player": "Rhys Hoskins",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 54.0,
+    "marketProb": 46.0
+   },
+   {
+    "id": "props|660271|hrr|2.5|Under",
+    "player": "Shohei Ohtani",
+    "market": "hrr",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 50.4,
+    "marketProb": 45.0
+   },
+   {
+    "id": "props|660271|tb|2.5|Under",
+    "player": "Shohei Ohtani",
+    "market": "tb",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 57.4,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|661388|hrr|1.5|Under",
+    "player": "William Contreras",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.0,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|661388|tb|1.5|Under",
+    "player": "William Contreras",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.5,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|662139|hrr|1.5|Under",
+    "player": "Daulton Varsho",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.0,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|662139|tb|1.5|Under",
+    "player": "Daulton Varsho",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 66.3,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|663372|k|3.5|Under",
+    "player": "Ryan Feltner",
+    "market": "k",
+    "line": 3.5,
+    "side": "Under",
+    "modelProb": 64.2,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|663457|tb|1.5|Under",
+    "player": "Lars Nootbaar",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 74.3,
+    "marketProb": 69.0
+   },
+   {
+    "id": "props|663656|hrr|2.5|Under",
+    "player": "Kyle Tucker",
+    "market": "hrr",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 63.2,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|663656|tb|1.5|Under",
+    "player": "Kyle Tucker",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.4,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|663728|tb|0.5|Under",
+    "player": "Cal Raleigh",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 54.0,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|663886|tb|1.5|Under",
+    "player": "Tyler Stephenson",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.4,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|664023|hrr|1.5|Under",
+    "player": "Ian Happ",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 54.8,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|664023|tb|1.5|Under",
+    "player": "Ian Happ",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 67.0,
+    "marketProb": 60.0
+   },
+   {
+    "id": "props|664728|hrr|1.5|Under",
+    "player": "Kyle Isbel",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.2,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|664770|hrr|1.5|Under",
+    "player": "Nathan Lukes",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.7,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|664770|tb|1.5|Under",
+    "player": "Nathan Lukes",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 69.1,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|665862|hrr|1.5|Under",
+    "player": "Jazz Chisholm Jr.",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 57.5,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|665862|tb|1.5|Under",
+    "player": "Jazz Chisholm Jr.",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 68.2,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|665923|tb|0.5|Under",
+    "player": "Esteury Ruiz",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 60.0,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|666139|tb|0.5|Under",
+    "player": "Josh Lowe",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 52.2,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|666152|tb|0.5|Under",
+    "player": "David Hamilton",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 52.4,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|666176|hrr|1.5|Under",
+    "player": "Jo Adell",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 53.9,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|667472|hrr|1.5|Under",
+    "player": "Dane Myers",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.8,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|668709|hrr|1.5|Under",
+    "player": "JJ Bleday",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.1,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|668709|tb|1.5|Under",
+    "player": "JJ Bleday",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.2,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|668723|hrr|1.5|Under",
+    "player": "Ryan Vilade",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.8,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|668804|tb|1.5|Under",
+    "player": "Bryan Reynolds",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.2,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|668939|hrr|1.5|Under",
+    "player": "Adley Rutschman",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 55.5,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|669003|hrr|1.5|Under",
+    "player": "Garrett Mitchell",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.5,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|669003|tb|1.5|Under",
+    "player": "Garrett Mitchell",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 72.8,
+    "marketProb": 66.0
+   },
+   {
+    "id": "props|669016|tb|1.5|Under",
+    "player": "Brandon Marsh",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.5,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|669242|hrr|2.5|Under",
+    "player": "Tommy Edman",
+    "market": "hrr",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 64.2,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|669242|tb|1.5|Under",
+    "player": "Tommy Edman",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.0,
+    "marketProb": 51.0
+   },
+   {
+    "id": "props|669358|bb_p|1.5|Under",
+    "player": "Shane Baz",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 52.5,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|669358|er|2.5|Under",
+    "player": "Shane Baz",
+    "market": "er",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 58.8,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|669364|tb|1.5|Under",
+    "player": "Xavier Edwards",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 68.1,
+    "marketProb": 63.0
+   },
+   {
+    "id": "props|669701|hrr|0.5|Under",
+    "player": "Josh Smith",
+    "market": "hrr",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 51.7,
+    "marketProb": 44.0
+   },
+   {
+    "id": "props|671096|k|4.5|Under",
+    "player": "Andrew Abbott",
+    "market": "k",
+    "line": 4.5,
+    "side": "Under",
+    "modelProb": 60.7,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|671218|tb|1.5|Under",
+    "player": "Heliot Ramos",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.7,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|671739|hrr|1.5|Under",
+    "player": "Michael Harris II",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 51.1,
+    "marketProb": 43.0
+   },
+   {
+    "id": "props|671739|tb|1.5|Under",
+    "player": "Michael Harris II",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.7,
+    "marketProb": 51.0
+   },
+   {
+    "id": "props|672275|tb|0.5|Under",
+    "player": "Patrick Bailey",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 52.8,
+    "marketProb": 44.0
+   },
+   {
+    "id": "props|672456|bb_p|1.5|Under",
+    "player": "Keider Montero",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.4,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|672580|tb|1.5|Under",
+    "player": "Maikel Garcia",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.7,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|673357|hrr|1.5|Under",
+    "player": "Luis Robert Jr.",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.6,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|676439|tb|1.5|Under",
+    "player": "Hunter Feduccia",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 69.9,
+    "marketProb": 62.0
+   },
+   {
+    "id": "props|677587|hrr|1.5|Under",
+    "player": "Brayan Rocchio",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.0,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|677587|tb|1.5|Under",
+    "player": "Brayan Rocchio",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 69.8,
+    "marketProb": 64.0
+   },
+   {
+    "id": "props|677592|tb|0.5|Under",
+    "player": "Everson Pereira",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 54.1,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|677952|k|5.5|Under",
+    "player": "Braxton Ashcraft",
+    "market": "k",
+    "line": 5.5,
+    "side": "Under",
+    "modelProb": 54.2,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|678022|k|3.5|Over",
+    "player": "Jack Perkins",
+    "market": "k",
+    "line": 3.5,
+    "side": "Over",
+    "modelProb": 60.6,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|678662|hrr|1.5|Under",
+    "player": "Ezequiel Tovar",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 55.8,
+    "marketProb": 51.0
+   },
+   {
+    "id": "props|678662|tb|1.5|Under",
+    "player": "Ezequiel Tovar",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.9,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|679822|tb|0.5|Under",
+    "player": "Justin Foscue",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 51.1,
+    "marketProb": 46.0
+   },
+   {
+    "id": "props|680574|tb|0.5|Under",
+    "player": "Matt McLain",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 51.2,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|680779|tb|0.5|Under",
+    "player": "Henry Davis",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 56.6,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|680869|tb|1.5|Under",
+    "player": "Zack Gelof",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.8,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|680977|hrr|1.5|Under",
+    "player": "Brendan Donovan",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.7,
+    "marketProb": 59.0
+   },
+   {
+    "id": "props|681393|tb|1.5|Under",
+    "player": "Connor Norby",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.0,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|681517|bb_p|1.5|Under",
+    "player": "Kyle Leahy",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 66.4,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|681624|hrr|2.5|Under",
+    "player": "Andy Pages",
+    "market": "hrr",
+    "line": 2.5,
+    "side": "Under",
+    "modelProb": 55.4,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|681624|tb|1.5|Under",
+    "player": "Andy Pages",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 50.4,
+    "marketProb": 46.0
+   },
+   {
+    "id": "props|682243|bb_p|1.5|Under",
+    "player": "Bryce Miller",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 57.3,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|682622|hrr|1.5|Under",
+    "player": "Noelvi Marte",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 66.4,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|682626|hrr|1.5|Under",
+    "player": "Francisco Alvarez",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.6,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|682987|hrr|1.5|Under",
+    "player": "Spencer Jones",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.6,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|682987|tb|0.5|Under",
+    "player": "Spencer Jones",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 50.3,
+    "marketProb": 44.0
+   },
+   {
+    "id": "props|683002|tb|1.5|Under",
+    "player": "Gunnar Henderson",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.3,
+    "marketProb": 60.0
+   },
+   {
+    "id": "props|683734|tb|1.5|Under",
+    "player": "Andrew Vaughn",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 65.6,
+    "marketProb": 61.0
+   },
+   {
+    "id": "props|683737|tb|1.5|Under",
+    "player": "Michael Busch",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.7,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|686555|hrr|1.5|Under",
+    "player": "Isaac Collins",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.0,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|686611|tb|1.5|Under",
+    "player": "Dylan Crews",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.5,
+    "marketProb": 60.0
+   },
+   {
+    "id": "props|686765|tb|1.5|Under",
+    "player": "Nick Sogard",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.5,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|687401|tb|0.5|Under",
+    "player": "Joey Ortiz",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 50.8,
+    "marketProb": 44.0
+   },
+   {
+    "id": "props|687462|hrr|1.5|Under",
+    "player": "Spencer Horwitz",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 53.9,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|687462|tb|1.5|Under",
+    "player": "Spencer Horwitz",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.9,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|687597|hrr|1.5|Under",
+    "player": "Jordan Beck",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.8,
+    "marketProb": 51.0
+   },
+   {
+    "id": "props|690993|hrr|1.5|Under",
+    "player": "Colt Keith",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 59.3,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|690993|tb|1.5|Under",
+    "player": "Colt Keith",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.9,
+    "marketProb": 60.0
+   },
+   {
+    "id": "props|691011|hrr|0.5|Under",
+    "player": "Drew Romo",
+    "market": "hrr",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 51.8,
+    "marketProb": 47.0
+   },
+   {
+    "id": "props|691011|tb|0.5|Under",
+    "player": "Drew Romo",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 56.0,
+    "marketProb": 49.0
+   },
+   {
+    "id": "props|691788|tb|0.5|Under",
+    "player": "Joe Mack",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 52.4,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|691946|k|4.5|Under",
+    "player": "George Klassen",
+    "market": "k",
+    "line": 4.5,
+    "side": "Under",
+    "modelProb": 65.1,
+    "marketProb": 57.0
+   },
+   {
+    "id": "props|694203|hrr|1.5|Under",
+    "player": "Denzer Guzman",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 63.9,
+    "marketProb": 60.0
+   },
+   {
+    "id": "props|694249|tb|1.5|Under",
+    "player": "Cole Carrigg",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 54.4,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|694378|hrr|1.5|Under",
+    "player": "Jacob Gonzalez",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 62.9,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|694378|tb|0.5|Under",
+    "player": "Jacob Gonzalez",
+    "market": "tb",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 50.7,
+    "marketProb": 44.0
+   },
+   {
+    "id": "props|695600|tb|1.5|Under",
+    "player": "Carter Jensen",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 59.1,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|695720|tb|1.5|Under",
+    "player": "Tommy White",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.5,
+    "marketProb": 53.0
+   },
+   {
+    "id": "props|696100|tb|1.5|Under",
+    "player": "Hunter Goodman",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 57.4,
+    "marketProb": 50.0
+   },
+   {
+    "id": "props|699013|hrr|1.5|Under",
+    "player": "Esmerlyn Valdez",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.8,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|699912|hrr|1.5|Under",
+    "player": "Jose Fernandez",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.9,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|700250|hrr|1.5|Under",
+    "player": "Ben Rice",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 55.2,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|700250|tb|1.5|Under",
+    "player": "Ben Rice",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.4,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|702616|hrr|1.5|Under",
+    "player": "Jackson Holliday",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 61.3,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|800325|hrr|1.5|Under",
+    "player": "Luis Lara",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 64.9,
+    "marketProb": 58.0
+   },
+   {
+    "id": "props|802139|tb|1.5|Under",
+    "player": "JJ Wetherholt",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 60.3,
+    "marketProb": 56.0
+   },
+   {
+    "id": "props|805673|bb_p|1.5|Over",
+    "player": "Zebby Matthews",
+    "market": "bb_p",
+    "line": 1.5,
+    "side": "Over",
+    "modelProb": 69.2,
+    "marketProb": 62.0
+   },
+   {
+    "id": "props|805673|er|2.5|Over",
+    "player": "Zebby Matthews",
+    "market": "er",
+    "line": 2.5,
+    "side": "Over",
+    "modelProb": 60.5,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|805673|k|4.5|Under",
+    "player": "Zebby Matthews",
+    "market": "k",
+    "line": 4.5,
+    "side": "Under",
+    "modelProb": 60.5,
+    "marketProb": 55.0
+   },
+   {
+    "id": "props|805779|tb|1.5|Under",
+    "player": "Jacob Wilson",
+    "market": "tb",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 58.5,
+    "marketProb": 54.0
+   },
+   {
+    "id": "props|805999|hrr|1.5|Under",
+    "player": "A.J. Ewing",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 56.1,
+    "marketProb": 52.0
+   },
+   {
+    "id": "props|808982|hrr|1.5|Under",
+    "player": "Jung Hoo Lee",
+    "market": "hrr",
+    "line": 1.5,
+    "side": "Under",
+    "modelProb": 52.7,
+    "marketProb": 48.0
+   },
+   {
+    "id": "props|813841|hrr|0.5|Under",
+    "player": "Jonah Cox",
+    "market": "hrr",
+    "line": 0.5,
+    "side": "Under",
+    "modelProb": 52.9,
+    "marketProb": 40.0
+   }
+  ],
+  "kalshiDecisionSet": {
+   "schemaVersion": "kalshi-decision-set-v1",
+   "status": "ok",
+   "count": 0,
+   "root": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "earliestEventStart": null,
+   "reasonCodes": []
+  },
+  "kalshiDecisions": []
+ },
+ "nonce": "1d18ea5a1546f1116a18aa004347b7ec",
+ "results": [
+  {
+   "id": "hr|Esmerlyn Valdez",
+   "result": "L"
+  },
+  {
+   "id": "hr|Griffin Conine",
+   "result": "W"
+  },
+  {
+   "id": "hr|Junior Caminero",
+   "result": "L"
+  },
+  {
+   "id": "hr|Kyle Schwarber",
+   "result": "L"
+  },
+  {
+   "id": "hr|Munetaka Murakami",
+   "result": "W"
+  },
+  {
+   "id": "hr|Pete Crow-Armstrong",
+   "result": "W"
+  },
+  {
+   "id": "hr|Shohei Ohtani",
+   "result": "W"
+  },
+  {
+   "id": "hr|Yordan Alvarez",
+   "result": "L"
+  },
+  {
+   "id": "props|554430|bb_p|1.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|592662|er|2.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|605141|hrr|2.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|605141|tb|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|615698|bb_p|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|615698|er|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|641778|er|3.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|663647|hrr|0.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|663647|tb|0.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|664299|er|2.5|Over",
+   "result": "L"
+  },
+  {
+   "id": "props|664299|k|4.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|668723|tb|0.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|669236|hrr|0.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|671096|bb_p|1.5|Over",
+   "result": "W"
+  },
+  {
+   "id": "props|671218|hrr|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|676439|hrr|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|677952|bb_p|0.5|Over",
+   "result": "L"
+  },
+  {
+   "id": "props|678022|er|2.5|Over",
+   "result": "L"
+  },
+  {
+   "id": "props|681047|hrr|0.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|681047|tb|0.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|681393|hrr|1.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|687931|bb_p|1.5|Over",
+   "result": "W"
+  },
+  {
+   "id": "props|690986|bb_p|1.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|691777|hrr|2.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|691777|tb|1.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|691946|bb_p|2.5|Over",
+   "result": "W"
+  },
+  {
+   "id": "props|691946|er|2.5|Under",
+   "result": "W"
+  },
+  {
+   "id": "props|695720|hrr|1.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|813841|hrr|1.5|Under",
+   "result": "L"
+  },
+  {
+   "id": "props|813841|tb|0.5|Under",
+   "result": "L"
+  }
+ ],
+ "revealedAtInfoOnly": "2026-08-19T07:00:01Z"
+}
