@@ -1,0 +1,18 @@
+{
+ "date": "2026-09-02",
+ "commitHash": "cc6a8f612371c7f43c48900a8157c547ccbc35b75947de94bef063c16d5f2440",
+ "algo": "sha256(canonical_card_json + nonce)",
+ "officialPickCount": 35,
+ "researchLeanCount": 102,
+ "kalshiDecisionSet": {
+  "schemaVersion": "kalshi-decision-set-v1",
+  "status": "ok",
+  "count": 62,
+  "root": "43193894da2d6c1107abb2c243280f3eb7cf1707fa6ec0e1f3877606ff2c3ce4",
+  "reasonCodes": []
+ },
+ "earliestEventStart": "2026-09-02T16:40:00+00:00",
+ "modelVersion": "PV-MLB-props-v3",
+ "localClockAtInfoOnly": "2026-09-02T15:31:18Z",
+ "note": "Card hidden (SHA-256 only) until reveal. The official board is committed EXACTLY as published; research leans are a separate labeled collection. Trusted witness time = GitHub's server-issued Events API PushEvent.created_at for the commit that first published THIS file, bound to that immutable commit SHA (see verify_commit.py). No local git author/committer date or self-reported clock is trusted."
+}
