@@ -1,0 +1,393 @@
+{
+  "date": "2026-09-03",
+  "locked_at": "2026-09-04T02:01:25",
+  "content_hash": "a8582f93487eac5f5af55c4ba6cea54773644c5c5b37e92d996220301470c614",
+  "prev_hash": "f1929b7e7e92d878746f96c78047e58018fb847fbb254e8608757f4218ad760e",
+  "chain_hash": "69e807d74f53bf0ce632ac6234054b4f3befe9f998c40d6a76c0438ebc2aac61",
+  "content": {
+    "date": "2026-09-03",
+    "lanes": {
+      "f5": [],
+      "sharp": [
+        {
+          "k": "Cal Quantrill",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Cal Quantrill",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Griffin Conine",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Griffin Conine",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Jack Perkins",
+          "pick": "OVER",
+          "result": "W"
+        },
+        {
+          "k": "Jonathan Aranda",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Quinn Mathews",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Shane McClanahan",
+          "pick": "UNDER",
+          "result": "L"
+        }
+      ],
+      "hr": [
+        {
+          "k": "Alec Burleson",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Alex Bregman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brandon Lowe",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brandon Nimmo",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brice Turang",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Cal Raleigh",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Cam Smith",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Carter Jensen",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Cedric Mullins",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Christian Encarnacion-Strand",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Christian Walker",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Coby Mayo",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Colson Montgomery",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Corey Seager",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Daulton Varsho",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Dominic Canzone",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Freddie Freeman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Griffin Conine",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Henry Bolte",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Heriberto Hernández",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Ian Happ",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Isaac Paredes",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jac Caglianone",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jackson Chourio",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jake Bauers",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jake Burger",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Joe Mack",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jonah Heim",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jonathan Aranda",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Jordan Walker",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Junior Caminero",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Justin Foscue",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Kyle Stowers",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Lazaro Montes",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Max Muncy",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Michael Busch",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Michael Conforto",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Mickey Gasper",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Miguel Vargas",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Mookie Betts",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Munetaka Murakami",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Oneil Cruz",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Pete Alonso",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Pete Crow-Armstrong",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Rafael Devers",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Randy Arozarena",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Roman Anthony",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Salvador Perez",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Seiya Suzuki",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Taylor Trammell",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Tommy Edman",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Victor Mesa Jr.",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Will Smith",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "William Contreras",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Wilyer Abreu",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Wyatt Langford",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Yordan Alvarez",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Zack Gelof",
+          "pick": "top_prob",
+          "result": "W"
+        }
+      ],
+      "nrfi": [
+        {
+          "k": "BOS@BAL",
+          "pick": "NRFI",
+          "result": "L"
+        },
+        {
+          "k": "MIA@KC",
+          "pick": "NRFI",
+          "result": "L"
+        },
+        {
+          "k": "MIL@CHC",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "STL@LAD",
+          "pick": "NRFI",
+          "result": "L"
+        },
+        {
+          "k": "TB@TEX",
+          "pick": "NRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [],
+      "sweet": [
+        {
+          "k": "Iván Herrera",
+          "pick": "",
+          "result": "W"
+        }
+      ],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "7-1",
+      "hr": "8-50",
+      "nrfi": "2-3",
+      "totals": "0-0",
+      "sweet": "1-0",
+      "ppslip": "0-0"
+    }
+  }
+}
