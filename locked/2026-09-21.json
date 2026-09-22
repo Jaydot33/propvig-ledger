@@ -1,0 +1,268 @@
+{
+  "date": "2026-09-21",
+  "locked_at": "2026-09-22T02:01:58",
+  "content_hash": "fcb3e3ac33ab95b1c394883d03dbf586284e9948a861af6e1818ece77a472fa8",
+  "prev_hash": "89ec0c77423f0aeab240e555f6d99842f4d5c7cb6117d58448b0a4501f56aa33",
+  "chain_hash": "763397ae029c39e9f10f42af88ea18f4db583fc9ae3b17e392b9650b887fd929",
+  "content": {
+    "date": "2026-09-21",
+    "lanes": {
+      "f5": [],
+      "sharp": [
+        {
+          "k": "Drew Cavanaugh",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Ernie Clement",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Jonah Cox",
+          "pick": "UNDER",
+          "result": "L"
+        },
+        {
+          "k": "Rece Hinds",
+          "pick": "UNDER",
+          "result": "W"
+        },
+        {
+          "k": "Shane Baz",
+          "pick": "OVER",
+          "result": "W"
+        },
+        {
+          "k": "Zebby Matthews",
+          "pick": "UNDER",
+          "result": "L"
+        }
+      ],
+      "hr": [
+        {
+          "k": "Aaron Sabato",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Abimelec Ortiz",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Alejandro Kirk",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Andrew Knizner",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Bo Davidson",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brady House",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Brooks Lee",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "CJ Abrams",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Christian Encarnacion-Strand",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Coby Mayo",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Colton Cowser",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Daylen Lile",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Dillon Dingler",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Drew Gilbert",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Dylan Beavers",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Dylan Crews",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Eduardo Valencia",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Emmanuel Rodriguez",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "George Springer",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Gunnar Henderson",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Hao-Yu Lee",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "James Wood",
+          "pick": "likely",
+          "result": "L"
+        },
+        {
+          "k": "James Wood",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Josh Smith",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "José Barrero",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Kazuma Okamoto",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Kody Clemens",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Luke Keaschall",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Marcelo Mayer",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Osleivis Basabe",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Pete Alonso",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Riley Greene",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ryan Jeffers",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Ryan Kreidler",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Samuel Basallo",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Scott Bandura",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Shay Whitcomb",
+          "pick": "top_prob",
+          "result": "L"
+        },
+        {
+          "k": "Spencer Torkelson",
+          "pick": "top_prob",
+          "result": "W"
+        },
+        {
+          "k": "Walker Jenkins",
+          "pick": "top_prob",
+          "result": "L"
+        }
+      ],
+      "nrfi": [
+        {
+          "k": "MIN@SF",
+          "pick": "YRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [],
+      "sweet": [
+        {
+          "k": "Kazuma Okamoto",
+          "pick": "",
+          "result": "W"
+        }
+      ],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "4-2",
+      "hr": "6-33",
+      "nrfi": "1-0",
+      "totals": "0-0",
+      "sweet": "1-0",
+      "ppslip": "0-0"
+    }
+  }
+}
