@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-29",
+  "locked_at": "2026-09-30T02:02:09",
+  "content_hash": "579d4dd0b5130f0cd5ffafd24b889e1450ba653128c7fde103548e690ba5c56a",
+  "prev_hash": "09def41c0afaba311fe3d0368fd8d85c857d68053a7e5f4a776485254d56c359",
+  "chain_hash": "72dc7053c0a66e135a7db2ca6ba46948566f10598a07258a3cf9abd493d1533e",
+  "content": {
+    "date": "2026-09-29",
+    "lanes": {
+      "f5": [
+        {
+          "k": "CWS@HOU",
+          "pick": "CWS",
+          "result": "W"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "CWS@HOU",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "CWS@HOU",
+        "side": "CWS",
+        "price": 144,
+        "ev_pct": 0.232,
+        "result": "win",
+        "profit_units": 1.44
+      }
+    ],
+    "summary": {
+      "f5": "1-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
