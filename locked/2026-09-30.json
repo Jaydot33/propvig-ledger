@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-30",
+  "locked_at": "2026-10-01T02:02:12",
+  "content_hash": "21f4f909cc119839a6a9f09bf868ce83b5569be1a0ae821709e090ba5d36ff37",
+  "prev_hash": "72dc7053c0a66e135a7db2ca6ba46948566f10598a07258a3cf9abd493d1533e",
+  "chain_hash": "8af45ae17d46c32d57112448daa6c15039ecd7c67130929e654d23e7493386ad",
+  "content": {
+    "date": "2026-09-30",
+    "lanes": {
+      "f5": [
+        {
+          "k": "CHC@SD",
+          "pick": "SD",
+          "result": "W"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "CHC@SD",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "PHI@ATL",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "CHC@SD",
+        "side": "SD",
+        "price": 113,
+        "ev_pct": -0.0458,
+        "result": "win",
+        "profit_units": 1.13
+      }
+    ],
+    "summary": {
+      "f5": "1-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "1-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
