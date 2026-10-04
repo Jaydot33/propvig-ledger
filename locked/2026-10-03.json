@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-03",
+  "locked_at": "2026-10-04T02:02:01",
+  "content_hash": "46ac60b6a3b4df3c163d51596c3a7b8d9d91834f231f1097b5b7cc33fae8ef3b",
+  "prev_hash": "c68985e5ce9aa650cceee548bae0db254cc77f73503dac09e635f1b5080a84fc",
+  "chain_hash": "881e7babf6847d2fe459e0aa181d5d63adb1e8e82b3c80a4cdcce510741dfdac",
+  "content": {
+    "date": "2026-10-03",
+    "lanes": {
+      "f5": [
+        {
+          "k": "SD@MIL",
+          "pick": "MIL",
+          "result": "P"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "ATL@LAD",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "NYY@TB",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "SD@MIL",
+          "pick": "NRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "SD@MIL",
+        "side": "MIL",
+        "price": -138,
+        "ev_pct": -0.1292,
+        "result": "push",
+        "profit_units": 0.0
+      }
+    ],
+    "summary": {
+      "f5": "0-0-1",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "3-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
