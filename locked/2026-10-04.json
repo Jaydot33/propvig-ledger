@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-04",
+  "locked_at": "2026-10-05T02:02:07",
+  "content_hash": "0d72e51303c4c2b619ad065cce08e615390f45875e8b0210a23cf4b5c36bf77e",
+  "prev_hash": "881e7babf6847d2fe459e0aa181d5d63adb1e8e82b3c80a4cdcce510741dfdac",
+  "chain_hash": "0ba1e92fdaec3acc942735adf0cc6f025b22bcde92b70e60fb1bd6d564023793",
+  "content": {
+    "date": "2026-10-04",
+    "lanes": {
+      "f5": [
+        {
+          "k": "ATL@LAD",
+          "pick": "LAD",
+          "result": "L"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "ATL@LAD",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "ATL@LAD",
+        "side": "LAD",
+        "price": -127,
+        "ev_pct": -0.0975,
+        "result": "loss",
+        "profit_units": -1.0
+      }
+    ],
+    "summary": {
+      "f5": "0-1",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
