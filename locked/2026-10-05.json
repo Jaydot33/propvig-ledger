@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-05",
+  "locked_at": "2026-10-06T02:01:55",
+  "content_hash": "a736b1fcbf80589c0eef415de8b2deadf0b51f16dad6611490f0cf7d04b3cf94",
+  "prev_hash": "0ba1e92fdaec3acc942735adf0cc6f025b22bcde92b70e60fb1bd6d564023793",
+  "chain_hash": "3ae243f567dfa7fa7a41540dadac1c5ffaeaac9c1785a9a746e81411bf28c09d",
+  "content": {
+    "date": "2026-10-05",
+    "lanes": {
+      "f5": [
+        {
+          "k": "NYY@TB",
+          "pick": "NYY",
+          "result": "L"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "NYY@TB",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "NYY@TB",
+        "side": "NYY",
+        "price": 113,
+        "ev_pct": 0.0754,
+        "result": "loss",
+        "profit_units": -1.0
+      }
+    ],
+    "summary": {
+      "f5": "0-1",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
