@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-06",
+  "locked_at": "2026-10-07T02:01:52",
+  "content_hash": "21ae34f993862a4006187c19d99ccd32b89cda8729a37cba0ffe29223ba146cf",
+  "prev_hash": "3ae243f567dfa7fa7a41540dadac1c5ffaeaac9c1785a9a746e81411bf28c09d",
+  "chain_hash": "092e0b64177e7324246693b8ce952ed7ad1ed5428314b0b6523c2083aa845ba2",
+  "content": {
+    "date": "2026-10-06",
+    "lanes": {
+      "f5": [],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "LAD@ATL",
+          "pick": "NRFI",
+          "result": "W"
+        },
+        {
+          "k": "MIL@SD",
+          "pick": "NRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "2-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
