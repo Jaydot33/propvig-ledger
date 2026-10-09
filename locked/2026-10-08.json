@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "locked_at": "2026-10-09T02:01:34",
+  "content_hash": "f383f9c1268e7ba34c16840953f0c62d6c56b9b97c628ec0fd51534b4314fce5",
+  "prev_hash": "b7054429f3eec11ea2d76ff988cc53dba9aa69189c6d958aa79f20d4172eaa06",
+  "chain_hash": "385a2efa44678dc7505fdaa0ec0076375141896ffbb4af47ae36400d9980c1b1",
+  "content": {
+    "date": "2026-10-08",
+    "lanes": {
+      "f5": [],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "CLE@CWS",
+          "pick": "NRFI",
+          "result": "W"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "1-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
