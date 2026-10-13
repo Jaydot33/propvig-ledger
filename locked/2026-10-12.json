@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-12",
+  "locked_at": "2026-10-13T02:03:11",
+  "content_hash": "c8dd3a95424bc44a7a33f06258d6b7240cd234b1a9be1ffa680502ff3749555e",
+  "prev_hash": "c823355e2d96ccf40b12a53c3949e4f493de20e4419ddaae8486252f0ec17def",
+  "chain_hash": "ac3bc7160a379132153366f793122f5f7f3b6f7b548af189be11826a9a2aaffd",
+  "content": {
+    "date": "2026-10-12",
+    "lanes": {
+      "f5": [
+        {
+          "k": "CLE@TB",
+          "pick": "TB",
+          "result": "W"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "CLE@TB",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "CLE@TB",
+        "side": "TB",
+        "price": -108,
+        "ev_pct": -0.1487,
+        "result": "win",
+        "profit_units": 0.9259
+      }
+    ],
+    "summary": {
+      "f5": "1-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
