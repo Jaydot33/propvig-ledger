@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-14",
+  "locked_at": "2026-10-15T02:03:10",
+  "content_hash": "b7f2ffb90fc4abf23d56ae9a1026f6f551922173c159f9153b3ee2ffba2ab669",
+  "prev_hash": "363e3b927c5265c2972c0f933b9d7b0814270c2a46d74c2e47eeba1db966fbad",
+  "chain_hash": "d9cf4de86258ebc2cc9f7591f95ff772593613e382252bebefcd888f1e74e287",
+  "content": {
+    "date": "2026-10-14",
+    "lanes": {
+      "f5": [
+        {
+          "k": "MIL@LAD",
+          "pick": "LAD",
+          "result": "L"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "MIL@LAD",
+        "side": "LAD",
+        "price": -113,
+        "ev_pct": -0.1555,
+        "result": "loss",
+        "profit_units": -1.0
+      }
+    ],
+    "summary": {
+      "f5": "0-1",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
