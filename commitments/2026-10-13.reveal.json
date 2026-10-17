@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-13",
+ "card": {
+  "official": [
+   {
+    "id": "props|810938|hrr|1.5|Under",
+    "srcId": "810938",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Ben Williamson",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 65.3,
+    "displayModelProb": 65.3,
+    "marketProb": 60.0,
+    "displayMarketProb": 60.0,
+    "rawEdgePp": 5.2,
+    "displayEdgePp": 5.3,
+    "captureTime": "2026-10-13T14:01:17Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-14T00:00:00+00:00",
+    "official": true
+   }
+  ],
+  "researchLeans": [],
+  "kalshiDecisionSet": {
+   "schemaVersion": "kalshi-decision-set-v1",
+   "status": "degraded",
+   "count": 0,
+   "root": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "earliestEventStart": null,
+   "reasonCodes": [
+    "KALSHI_SET_MISSING"
+   ]
+  },
+  "kalshiDecisions": []
+ },
+ "nonce": "d47b2c4af4a93847bc4d94e655732e3f",
+ "results": [
+  {
+   "id": "props|810938|hrr|1.5|Under",
+   "result": "VOID"
+  }
+ ],
+ "revealedAtInfoOnly": "2026-10-17T07:00:02Z"
+}
