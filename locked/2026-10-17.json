@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-17",
+  "locked_at": "2026-10-18T02:04:45",
+  "content_hash": "72721c999b832e0d2722b7be355ff09e4e7a1e71f71868be82824a3a7c568d9a",
+  "prev_hash": "f2f1663242e5f478e5bfed9c512602246b546ecdde913281552adacd9810df2d",
+  "chain_hash": "294e0cf969f26e450f8f0831a1c8b3982a91508e2c77fe23c0c82050a8457c67",
+  "content": {
+    "date": "2026-10-17",
+    "lanes": {
+      "f5": [],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [
+        {
+          "k": "TB@CLE",
+          "pick": "NRFI",
+          "result": "L"
+        }
+      ],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-1",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
