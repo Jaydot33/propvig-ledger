@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-14",
+ "card": {
+  "official": [
+   {
+    "id": "props|660271|hrr|1.5|Under",
+    "srcId": "660271",
+    "srcKey": "hrr",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Shohei Ohtani",
+    "market": "Hits + Runs + RBI",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 58.2,
+    "displayModelProb": 58.2,
+    "marketProb": 53.0,
+    "displayMarketProb": 53.0,
+    "rawEdgePp": 5.2,
+    "displayEdgePp": 5.2,
+    "captureTime": "2026-10-14T14:01:26Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-15T00:00:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|688107|bb_p|0.5|Over",
+    "srcId": "688107",
+    "srcKey": "bb_p",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Robert Gasser",
+    "market": "Walks",
+    "line": 0.5,
+    "side": "Over",
+    "rawModelProb": 79.4,
+    "displayModelProb": 79.4,
+    "marketProb": 65.0,
+    "displayMarketProb": 65.0,
+    "rawEdgePp": 14.2,
+    "displayEdgePp": 14.4,
+    "captureTime": "2026-10-14T14:01:26Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-15T00:00:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|688107|er|1.5|Under",
+    "srcId": "688107",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Robert Gasser",
+    "market": "Earned runs",
+    "line": 1.5,
+    "side": "Under",
+    "rawModelProb": 52.2,
+    "displayModelProb": 52.2,
+    "marketProb": 45.0,
+    "displayMarketProb": 45.0,
+    "rawEdgePp": 6.8,
+    "displayEdgePp": 7.2,
+    "captureTime": "2026-10-14T14:01:26Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-15T00:00:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|688107|ha|3.5|Under",
+    "srcId": "688107",
+    "srcKey": "ha",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Robert Gasser",
+    "market": "Hits allowed",
+    "line": 3.5,
+    "side": "Under",
+    "rawModelProb": 57.0,
+    "displayModelProb": 57.0,
+    "marketProb": 48.0,
+    "displayMarketProb": 48.0,
+    "rawEdgePp": 9.3,
+    "displayEdgePp": 9.0,
+    "captureTime": "2026-10-14T14:01:26Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-15T00:00:00+00:00",
+    "official": true
+   }
+  ],
+  "researchLeans": [],
+  "kalshiDecisionSet": {
+   "schemaVersion": "kalshi-decision-set-v1",
+   "status": "degraded",
+   "count": 0,
+   "root": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "earliestEventStart": null,
+   "reasonCodes": [
+    "KALSHI_SET_MISSING"
+   ]
+  },
+  "kalshiDecisions": []
+ },
+ "nonce": "deec88a982dd81bea0700fcbff48764d",
+ "results": [
+  {
+   "id": "props|660271|hrr|1.5|Under",
+   "result": "VOID"
+  },
+  {
+   "id": "props|688107|bb_p|0.5|Over",
+   "result": "VOID"
+  },
+  {
+   "id": "props|688107|er|1.5|Under",
+   "result": "VOID"
+  },
+  {
+   "id": "props|688107|ha|3.5|Under",
+   "result": "VOID"
+  }
+ ],
+ "revealedAtInfoOnly": "2026-10-18T07:00:02Z"
+}
