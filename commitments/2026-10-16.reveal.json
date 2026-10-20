@@ -1,0 +1,73 @@
+{
+ "date": "2026-10-16",
+ "card": {
+  "official": [
+   {
+    "id": "props|607259|er|1.5|Over",
+    "srcId": "607259",
+    "srcKey": "er",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Nick Martinez",
+    "market": "Earned runs",
+    "line": 1.5,
+    "side": "Over",
+    "rawModelProb": 51.7,
+    "displayModelProb": 51.7,
+    "marketProb": 38.0,
+    "displayMarketProb": 38.0,
+    "rawEdgePp": 13.5,
+    "displayEdgePp": 13.7,
+    "captureTime": "2026-10-16T14:01:08Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-17T00:00:00+00:00",
+    "official": true
+   },
+   {
+    "id": "props|690984|tb|0.5|Under",
+    "srcId": "690984",
+    "srcKey": "tb",
+    "resultKey": "pinnacle_edge",
+    "lane": "props",
+    "player": "Petey Halpin",
+    "market": "Total bases",
+    "line": 0.5,
+    "side": "Under",
+    "rawModelProb": 53.5,
+    "displayModelProb": 53.5,
+    "marketProb": 48.0,
+    "displayMarketProb": 48.0,
+    "rawEdgePp": 5.3,
+    "displayEdgePp": 5.5,
+    "captureTime": "2026-10-16T14:01:08Z",
+    "modelVersion": "PV-MLB-props-v3",
+    "eventStart": "2026-10-17T00:00:00+00:00",
+    "official": true
+   }
+  ],
+  "researchLeans": [],
+  "kalshiDecisionSet": {
+   "schemaVersion": "kalshi-decision-set-v1",
+   "status": "degraded",
+   "count": 0,
+   "root": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "earliestEventStart": null,
+   "reasonCodes": [
+    "KALSHI_SET_MISSING"
+   ]
+  },
+  "kalshiDecisions": []
+ },
+ "nonce": "d0dd447d386973337be0a747b8948c04",
+ "results": [
+  {
+   "id": "props|607259|er|1.5|Over",
+   "result": "VOID"
+  },
+  {
+   "id": "props|690984|tb|0.5|Under",
+   "result": "VOID"
+  }
+ ],
+ "revealedAtInfoOnly": "2026-10-20T07:00:02Z"
+}
