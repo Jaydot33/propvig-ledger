@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-23",
+  "locked_at": "2026-10-24T02:07:33",
+  "content_hash": "59f2d64e3ed82a1a8abe7289d64f9bfa1b01836d6b249ed59231c0041cfe420e",
+  "prev_hash": "5c4edd0a1dc4200162afacd7af1a001b5248325d36722b3b6d26725f2bb8af5f",
+  "chain_hash": "c015b7b8e10ebf546654b783e06dd33e70b5b82a42fc096a6b57567ff656723a",
+  "content": {
+    "date": "2026-10-23",
+    "lanes": {
+      "f5": [
+        {
+          "k": "TB@MIL",
+          "pick": "MIL",
+          "result": "W"
+        }
+      ],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [
+      {
+        "game": "TB@MIL",
+        "side": "MIL",
+        "price": -122,
+        "ev_pct": -0.0812,
+        "result": "win",
+        "profit_units": 0.8197
+      }
+    ],
+    "summary": {
+      "f5": "1-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
