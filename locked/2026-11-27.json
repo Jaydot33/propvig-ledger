@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-27",
+  "locked_at": "2026-11-28T02:08:40",
+  "content_hash": "a01b3b812a2263b6b044d2df75ea0a83f9473193fbcb7d53f1da6a90589daf7f",
+  "prev_hash": "dd75b0577773aed33a4ed90dcf9817b8a893d08ff6162b0fef6ee5a77e193012",
+  "chain_hash": "27a60687bf0e7c96b51dd09de9cacd123fef5f7c761d90b0bd35a2761763afbb",
+  "content": {
+    "date": "2026-11-27",
+    "lanes": {
+      "f5": [],
+      "sharp": [],
+      "hr": [],
+      "nrfi": [],
+      "totals": [],
+      "sweet": [],
+      "ppslip": []
+    },
+    "priced_ledger": [],
+    "summary": {
+      "f5": "0-0",
+      "sharp": "0-0",
+      "hr": "0-0",
+      "nrfi": "0-0",
+      "totals": "0-0",
+      "sweet": "0-0",
+      "ppslip": "0-0"
+    }
+  }
+}
